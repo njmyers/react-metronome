@@ -1,5 +1,7 @@
 build/*
 
+src/*.css
+
 # Logs
 logs
 *.log
