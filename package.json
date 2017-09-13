@@ -8,12 +8,8 @@
     "node-sass-chokidar": "0.0.3",
     "npm-run-all": "^4.1.1",
     "react": "^15.6.1",
-    "react-dnd": "^2.5.1",
-    "react-dnd-html5-backend": "^2.5.1",
     "react-dom": "^15.6.1",
-    "react-knob": "^0.1.0",
-    "react-scripts": "1.0.13",
-    "serve": "^6.0.6"
+    "react-scripts": "1.0.13"
   },
   "scripts": {
     "predeploy": "npm run build",
