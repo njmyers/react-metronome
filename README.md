@@ -67,7 +67,7 @@ frame() {
 }
 ```
 
-However keeping with the goal of React you can see that state usually preservered in pretty much everything excpet for the animated wand. Beat timer indicates when to 'tock' and when to 'tick' by incrementing but only at the specified interval.
+However keeping with the goal of React you can see that state usually preservered in pretty much everything excpet for the animated wand. Beat timer indicates when to 'tock' and when to 'tick' by incrementing `tockCounter` but only at the specified interval.
 
 User input is handled through a controlled component and bubbled back up to the parent metronome by callbacks.
 
