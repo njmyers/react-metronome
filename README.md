@@ -84,3 +84,5 @@ inheritTolerance = (tolerance) => {
 }
 
 ```
+
+Hope you enjoy this project!
