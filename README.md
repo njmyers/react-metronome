@@ -1,6 +1,6 @@
 # React Metronome
 
-This project can be viewed [here](https://njmyers.github.io/react-metronome/)
+[This project can be viewed here](https://njmyers.github.io/react-metronome/)
 
 As someone with a long history and background in music I've always been in search of better digital metronomes. Something about the simplicity of a quartz crystal metronome or a mechanical metronome always struck me as the right type of regularity. Some digital metronomes leave me wanting more because of the type of regularity. It's about precision but also about feel. This project will hopefully reflect that and also will help me learn React!
 
@@ -41,7 +41,7 @@ Now should the metronome tick at round 2 or at round 3? At round 2 it will be ah
 
 For some musicians a metronome that 'rushes' is preferable to one that 'drags'. Of course the metronome dragging and rushing has inspired many music jokes but in this instances they are actually correct. This metronome allows the user to choose.
 
-A higher tolerance will result in a faster metronome and a lower tolerance will result in a slower metronome. Personally I need it bothe ways depending on the style of music I am playing!
+A higher tolerance will result in a faster metronome and a lower tolerance will result in a slower metronome. Personally I need it bothe ways depending on the style of music I am playing! A value of 6 seems to work just perfectly and is more accurate then [google's metronome](https://www.google.com/search?q=metronome).
 
 ## React
 

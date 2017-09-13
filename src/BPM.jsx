@@ -51,7 +51,7 @@ class BPM extends Component {
 					<input type="number" min="0" max="7" name="beat" value={this.state.beat} onChange={this.handleBeatChange} />
 				</label>
 				<label>Tolerance:
-					<input type="number" min="0" max="7" name="beat" value={this.state.tolerance} onChange={this.handleToleranceChange} />
+					<input type="number" min="0" max="10" name="beat" value={this.state.tolerance} onChange={this.handleToleranceChange} />
 				</label>
 			</form>
 			</div>
