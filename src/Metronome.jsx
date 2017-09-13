@@ -180,6 +180,9 @@ class Metronome extends Component {
 	render() {
 		return (
 			<div>
+				<div className="row">
+					<h1>Reactronome</h1>
+				</div>
 				<BPM inheritBPM={this.inheritBPM} inheritBeat={this.inheritBeat} inheritTolerance={this.inheritTolerance} />
 				<div className="row">
 					<div className="metronome">
@@ -192,6 +195,7 @@ class Metronome extends Component {
 					</button>
 				</div>
 				<Explanation />
+				<p>Metronome graphic used with <i className="fa fa-creative-commons"></i> license. Original work available <a href="https://thenounproject.com/term/metronome/28819/" target="_blank">here</a></p>
 			</div>
 		);
 	}
