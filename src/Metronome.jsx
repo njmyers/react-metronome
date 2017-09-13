@@ -126,7 +126,7 @@ class Metronome extends Component {
 
 	// ticking and tocking and helpers
 	tickTock(beat, tockCounter) {
-		if (beat == 1) {
+		if (parseInt(beat, 10) === 1) {
 			this.tick()
 		} else {
 			if (tockCounter) {
@@ -195,7 +195,6 @@ class Metronome extends Component {
 					</button>
 				</div>
 				<Explanation />
-				<p>Metronome graphic used with <i className="fa fa-creative-commons"></i> license. Original work available <a href="https://thenounproject.com/term/metronome/28819/" target="_blank">here</a></p>
 			</div>
 		);
 	}

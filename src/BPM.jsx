@@ -42,7 +42,7 @@ class BPM extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className="row">
 			<form name="controls">
 				<label>BPM:
 					<input type="number" min="30" max="320" name="bpm" value={this.state.bpm} onChange={this.handleBPMChange} />

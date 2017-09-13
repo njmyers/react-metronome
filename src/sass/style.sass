@@ -10,10 +10,15 @@ body
 
 #root
 	width: 75%
-	margin: 5% 0
+	margin: 3% 0
 
 h1
-	margin: 0 0 8% 0
+	margin: 0 0 6% 0
+	@include desktop
+		margin: 0 0 4% 0
+	font-size: 3.5em
+	@include all-phone
+		font-size: 3em
 
 .button
 	background: white
@@ -27,23 +32,16 @@ h1
 .button:hover
 	opacity: .8
 
-.knob
-	.circle
-		background: blue
-		width: 200px
-		height: 200px
-		clip-path: circle(100px at center)
-	.line
-
 .metronome
+	@include desktop
+		margin: 4% 0 0 0
 	background: url('./metronome-base.svg')
 	background-size: 85%
 	background-position: center
 	background-repeat: no-repeat
 	width: 60%
-	max-width: 700px
-	max-height: 700px
-	// height: 1000px
+	max-width: 600px
+	max-height: 600px
 	+flexbox
 	justify-content: center
 	align-items: center
@@ -56,17 +54,23 @@ h1
 	+flexbox
 	justify-content: center
 
+.controls-container
+	width: 60%
+	font-size: 40px
+
 form
+	width: 100%
+	max-width: 430px
 	+flexbox
 	justify-content: space-between
 	input[type='number']
-		// width: 50px
-		// height: 0px
 		padding: 6px 0 3px 8px
 		font-size: 18px
 		border-radius: 4px
 		border: none
 		margin: 0 0 0 8px
+		@include all-phone
+			margin: 0 0 0 2px
 	label
 		font-size: 1.2em
 
