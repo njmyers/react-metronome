@@ -50,16 +50,19 @@ As I am still learning React I tried to make a concept project that utilized as 
 Since the animations and ticks must refresh at different times we utilize the concept of the frame as a small timekeeper and then delegate changes from there. The function `frame()` is called every 4ms and the component updates on every frame call and from only that function.
 
 ```JavaScript
-this.setState(function(prevState) {
+frame() {
+  this.setState(function(prevState) {
 
-  // logic for determining which states change
+    // logic for determining which states change
+    // pass prevState variables to calculations such as rotation degrees etc...
 
-  return {
-    date,
-    counter,
-    direction,
-    style,
-    tockCounter
+    return {
+      date,
+      counter,
+      direction,
+      style,
+      tockCounter
+    }
   }
 }
 ```
