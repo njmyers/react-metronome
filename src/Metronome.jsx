@@ -4,8 +4,8 @@ import React, { Component } from 'react';
 import BPM from './BPM';
 import Explanation from './Explanation';
 // assets
-import tick from './tick.mp3';
-import tock from './tock.mp3';
+import tick from './audio/tick.mp3';
+import tock from './audio/tock.mp3';
 import wand from './metronome-wand.svg';
 
 class Metronome extends Component {
