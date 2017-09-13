@@ -7,7 +7,7 @@ class BPM extends Component {
 		super(props);
 		this.state = {
 			bpm: 60,
-			beat: 0,
+			beat: 1,
 			tolerance: 6,
 		}
 
@@ -43,17 +43,20 @@ class BPM extends Component {
 	render() {
 		return (
 			<div className="row">
-			<form name="controls">
-				<label>BPM:
-					<input type="number" min="30" max="320" name="bpm" value={this.state.bpm} onChange={this.handleBPMChange} />
-				</label>
-				<label>Beat:
-					<input type="number" min="0" max="7" name="beat" value={this.state.beat} onChange={this.handleBeatChange} />
-				</label>
-				<label>Tolerance:
-					<input type="number" min="0" max="10" name="beat" value={this.state.tolerance} onChange={this.handleToleranceChange} />
-				</label>
-			</form>
+				<div className="controls">
+					<span>
+						<label>BPM: {this.state.bpm}</label>
+						<input type="range" min="30" max="320" name="bpm" value={this.state.bpm} onChange={this.handleBPMChange} />
+					</span>
+					<span>
+						<label>Beat: {this.state.beat}</label>
+						<input type="range" min="0" max="7" name="beat" value={this.state.beat} onChange={this.handleBeatChange} />
+					</span>
+					<span>
+						<label>Tolerance: {this.state.tolerance}</label>
+						<input type="range" min="0" max="10" name="beat" value={this.state.tolerance} onChange={this.handleToleranceChange} />
+					</span>
+				</div>
 			</div>
 		)
 	}

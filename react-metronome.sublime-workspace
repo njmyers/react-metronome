@@ -4,6 +4,174 @@
 		"selected_items":
 		[
 			[
+				"no",
+				"noreferrer"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"cl",
+				"class\t? "
+			],
+			[
+				"cla",
+				"className\t{} "
+			],
+			[
+				"rea",
+				"react-metronome"
+			],
+			[
+				"tran",
+				"transformPrefixer"
+			],
+			[
+				"pro",
+				"property\t? "
+			],
+			[
+				"time",
+				"timePassed\tnum "
+			],
+			[
+				"class",
+				"className\t{} "
+			],
+			[
+				"hand",
+				"handleToleranceChange"
+			],
+			[
+				"han",
+				"handleToleranceChange(event)\tfn "
+			],
+			[
+				"fra",
+				"frameRate\tnum "
+			],
+			[
+				"tock",
+				"tockCounter"
+			],
+			[
+				"h",
+				"handleBeatChange(event)\tfn "
+			],
+			[
+				"in",
+				"inheritBeat"
+			],
+			[
+				"beat",
+				"beat"
+			],
+			[
+				"met",
+				"metronome-wand"
+			],
+			[
+				"pr",
+				"prevProps\t{} "
+			],
+			[
+				"prv",
+				"prevState\t{} "
+			],
+			[
+				"fr",
+				"frameRate"
+			],
+			[
+				"t",
+				"toggle"
+			],
+			[
+				"pre",
+				"prevProps\t{} "
+			],
+			[
+				"prev",
+				"prevState\t? "
+			],
+			[
+				"new",
+				"newCounter\tnum "
+			],
+			[
+				"st",
+				"style"
+			],
+			[
+				"cal",
+				"calcRotation"
+			],
+			[
+				"sta",
+				"startAnimation()\tfn "
+			],
+			[
+				"on",
+				"onClick\tbool "
+			],
+			[
+				"l",
+				"log"
+			],
+			[
+				"set",
+				"setState"
+			],
+			[
+				"updat",
+				"updateRotation"
+			],
+			[
+				"fl",
+				"flexbox"
+			],
+			[
+				"clas",
+				"className\t{} "
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"conn",
+				"connectDragSource\t? "
+			],
+			[
+				"connec",
+				"connectDragSource"
+			],
+			[
+				"con",
+				"collect(connect, monitor) -> {}\tfn "
+			],
+			[
+				"di",
+				"didDrop"
+			],
+			[
+				"bpm",
+				"bpmToMs"
+			],
+			[
+				"const",
+				"constructor"
+			],
+			[
+				"wat",
+				"watch-css"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
 				"fa-",
 				"fa-li"
 			],
@@ -28,10 +196,6 @@
 				"margin-top"
 			],
 			[
-				"fon",
-				"font-stack"
-			],
-			[
 				"form",
 				"form-background"
 			],
@@ -46,10 +210,6 @@
 			[
 				"font",
 				"font-size"
-			],
-			[
-				"in",
-				"input\tTag"
 			],
 			[
 				"cur",
@@ -88,10 +248,6 @@
 				"random"
 			],
 			[
-				"no",
-				"notes"
-			],
-			[
 				"a",
 				"audio"
 			],
@@ -110,10 +266,6 @@
 			[
 				"aud",
 				"audioURL"
-			],
-			[
-				"set",
-				"setTimeout"
 			],
 			[
 				"fad",
@@ -148,10 +300,6 @@
 				"audioTester"
 			],
 			[
-				"l",
-				"length"
-			],
-			[
 				"ad",
 				"addClick"
 			],
@@ -176,10 +324,6 @@
 				"colors"
 			],
 			[
-				"tran",
-				"transition"
-			],
-			[
 				"gen",
 				"generateColor"
 			],
@@ -194,10 +338,6 @@
 			[
 				"re",
 				"remove"
-			],
-			[
-				"st",
-				"strict"
 			],
 			[
 				"cli",
@@ -296,16 +436,8 @@
 				"accm"
 			],
 			[
-				"pr",
-				"primeArr"
-			],
-			[
 				"prim",
 				"primeFactorMe"
-			],
-			[
-				"cl",
-				"clickClearTimer"
 			],
 			[
 				"clea",
@@ -320,16 +452,8 @@
 				"break"
 			],
 			[
-				"di",
-				"direction"
-			],
-			[
 				"font-s",
 				"font-size"
-			],
-			[
-				"h",
-				"height"
 			],
 			[
 				"fun",
@@ -346,10 +470,6 @@
 			[
 				"fi",
 				"findWinner"
-			],
-			[
-				"pro",
-				"prototype"
 			],
 			[
 				"win",
@@ -394,131 +514,90 @@
 			[
 				"Mo",
 				"moveLog"
-			],
-			[
-				"move",
-				"moveLog"
-			],
-			[
-				"po",
-				"post-win"
-			],
-			[
-				"tr",
-				"translateX()"
-			],
-			[
-				"pad",
-				"padding"
-			],
-			[
-				"margin",
-				"margin-bottom"
-			],
-			[
-				"padd",
-				"padding-right"
-			],
-			[
-				"new",
-				"new-game"
-			],
-			[
-				"p",
-				"prototype"
-			],
-			[
-				"sho",
-				"showWinner"
-			],
-			[
-				"winner",
-				"winner"
-			],
-			[
-				"off",
-				"offClick"
-			],
-			[
-				"fu",
-				"function"
-			],
-			[
-				"init",
-				"initGame"
-			],
-			[
-				"comp",
-				"compIndex"
-			],
-			[
-				"if",
-				"ifGameIsWon"
-			],
-			[
-				"run",
-				"runSide"
-			],
-			[
-				"ti",
-				"TicTacToe"
-			],
-			[
-				"game",
-				"gamePlay"
-			],
-			[
-				"d",
-				"displayMove"
-			],
-			[
-				"reg",
-				"regDraw"
-			],
-			[
-				"let",
-				"let"
-			],
-			[
-				"ga",
-				"gamePlay"
-			],
-			[
-				"ru",
-				"runO"
-			],
-			[
-				"ar",
-				"arrGame"
-			],
-			[
-				"te",
-				"tempArr"
-			],
-			[
-				"tex",
-				"text-left"
-			],
-			[
-				"por",
-				"prototype"
-			],
-			[
-				"css",
-				"cssClass"
-			],
-			[
-				"cs",
-				"cssClass"
-			],
-			[
-				"tra",
-				"translate"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 4445,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/sass/mixins.sass",
+			"settings":
+			{
+				"buffer_size": 1413,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Explanation.jsx",
+			"settings":
+			{
+				"buffer_size": 2670,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Metronome.jsx",
+			"settings":
+			{
+				"buffer_size": 4267,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 916,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 820,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/audio",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/BPM.jsx",
+			"settings":
+			{
+				"buffer_size": 1417,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/sass/style.sass",
+			"settings":
+			{
+				"buffer_size": 1263,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -556,18 +635,40 @@
 	},
 	"expanded_folders":
 	[
-		"/home/developer/Dropbox/www/sites/react-metronome"
+		"/home/developer/Dropbox/www/sites/react-metronome",
+		"/home/developer/Dropbox/www/sites/react-metronome/public",
+		"/home/developer/Dropbox/www/sites/react-metronome/src"
 	],
 	"file_history":
 	[
+		"/home/developer/Dropbox/www/sites/react-metronome/src/Controls.jsx",
+		"/home/developer/Dropbox/www/sites/react-metronome/src/sass/style.sass",
+		"/home/developer/Dropbox/www/sites/react-metronome/src/metronome-wand.svg",
+		"/home/developer/Dropbox/www/sites/react-metronome/src/Metronome.jsx",
+		"/home/developer/Dropbox/www/sites/react-metronome/src/Explanation.jsx",
+		"/home/developer/Dropbox/www/sites/react-metronome/src/BPM.jsx",
+		"/home/developer/Dropbox/www/sites/react-metronome/package.json",
+		"/home/developer/Dropbox/www/sites/react-metronome/README.md",
+		"/home/developer/Dropbox/www/sites/react-metronome/public/index.html",
+		"/home/developer/Dropbox/www/sites/react-metronome/.gitignore",
+		"/home/developer/Dropbox/www/sites/react-metronome/src/metronome-base.svg",
+		"/home/developer/Dropbox/www/sites/react-metronome/src/logo.svg",
+		"/home/developer/Dropbox/www/sites/react-metronome/src/Wand.jsx",
+		"/home/developer/Dropbox/www/sites/react-metronome/src/index.js",
+		"/home/developer/Dropbox/www/sites/react-metronome/src/sass",
+		"/home/developer/Dropbox/www/sites/react-metronome/public/manifest.json",
+		"/home/developer/Dropbox/www/sites/react-demo/src/logo.svg",
+		"/home/developer/Dropbox/www/sites/react-demo/src/App.js",
+		"/home/developer/Downloads/metronome-base (1).svg",
+		"/home/developer/Downloads/Power_cable_wrap/README.txt",
+		"/home/developer/Downloads/Power_cable_wrap/LICENSE.txt",
+		"/home/developer/Dropbox/www/sites/react-metronome/src/style.css",
+		"/home/developer/Dropbox/www/myfolder/login.sh",
 		"/home/developer/Dropbox/www/sites/wedding/wwwroot/sass/style.sass",
 		"/home/developer/Dropbox/www/sites/wedding/wwwroot/index.html",
 		"/home/developer/Dropbox/www/sites/wedding/wwwroot/sass/body.sass",
-		"/home/developer/Dropbox/www/sites/react-metronome/package.json",
 		"/home/developer/Dropbox/www/sites/api.artetexture.com/.env",
 		"/home/developer/Dropbox/www/sites/wedding/wwwroot/script.js",
-		"/home/developer/Dropbox/www/sites/react-metronome/.gitignore",
-		"/home/developer/Dropbox/www/sites/react-metronome/src/Metronome.jsx",
 		"/home/developer/Dropbox/www/sites/react-metronome/package",
 		"/home/developer/Dropbox/www/sites/react-metronome/index.js",
 		"/home/developer/Dropbox/www/sites/wedding/wwwroot/sass/form.sass",
@@ -667,31 +768,11 @@
 		"/Volumes/Sonny/Users/nicholasmyers/Projects/interviewcake/productSuccesive.js",
 		"/Volumes/Sonny/Users/nicholasmyers/Projects/interviewcake/appleStock.js",
 		"/Volumes/Sonny/Users/nicholasmyers/Projects/euler/16.js",
-		"/Volumes/Sonny/Users/nicholasmyers/Projects/euler/9.js",
-		"/Volumes/Sonny/Users/nicholasmyers/Projects/regex/tester.js",
-		"/Volumes/Sonny/Users/nicholasmyers/Projects/euler/HTMLChars.js",
-		"/Volumes/Sonny/Users/nicholasmyers/Projects/euler/emailValidator.js",
-		"/Volumes/Sonny/Users/nicholasmyers/Projects/regex/telephoneCheck.js",
-		"/Volumes/Sonny/Users/nicholasmyers/Projects/regex/binaryToText.js",
-		"/Volumes/Sonny/Users/nicholasmyers/Projects/euler/creditCardRegExp.js",
-		"/Volumes/Sonny/Users/nicholasmyers/Projects/euler/8.js",
-		"/Volumes/Sonny/Users/nicholasmyers/Projects/euler/10.js",
-		"/Volumes/Sonny/Users/nicholasmyers/Projects/euler/2.js",
-		"/Volumes/Sonny/Users/nicholasmyers/Desktop/test.js",
-		"/Volumes/Sonny/www/sites/client9/wwwroot/style.css",
-		"/Volumes/Sonny/www/sites/client9/wwwroot/index.html",
-		"/Volumes/Sonny/Users/nicholasmyers/Desktop/exercise.js",
-		"/Volumes/Sonny/www/sites/client9/wwwroot/script.js",
-		"/Volumes/Sonny/www/sites/client9/wwwroot/skycons.js",
-		"/Volumes/Sonny/www/sites/client9/wwwroot/skycons.html",
-		"/Volumes/Sonny/www/sites/client9/wwwroot/scratch.js",
-		"/Volumes/Sonny/www/euler/4.js",
-		"/Volumes/Sonny/www/euler/8.js",
-		"/Volumes/Sonny/www/euler/5.js"
+		"/Volumes/Sonny/Users/nicholasmyers/Projects/euler/9.js"
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -705,6 +786,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"parse",
+			"pre",
+			"round",
+			";",
+			" {",
+			"}",
 			"></i>",
 			"h2",
 			"h3",
@@ -803,6 +890,10 @@
 		"regex": false,
 		"replace_history":
 		[
+			"code",
+			"cpde",
+			"interval",
+			"",
 			" aria-hidden=\"true\"></i>",
 			" aria-hidden=\"true></i>",
 			"h3",
@@ -854,14 +945,282 @@
 	"groups":
 	[
 		{
+			"selected": 5,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4445,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								566,
+								566
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/sass/mixins.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1413,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/Explanation.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2670,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2670,
+								2670
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/Metronome.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4267,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								196,
+								196
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": ".gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 916,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								309,
+								309
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 820,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								321,
+								321
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/audio",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/BPM.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1417,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								888,
+								888
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 8,
+					"file": "src/sass/style.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1263,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1043,
+								1043
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 702.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 26.0
 	},
 	"input":
 	{
@@ -876,11 +1235,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.65239669433,
 			1.0
 		],
 		"rows":
@@ -902,7 +1268,7 @@
 	"project": "react-metronome.sublime-project",
 	"replace":
 	{
-		"height": 64.0
+		"height": 62.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -948,7 +1314,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 189.0,
+	"side_bar_width": 256.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

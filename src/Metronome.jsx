@@ -19,7 +19,7 @@ class Metronome extends Component {
 			rotation: 26,
 			direction: true,
 			style: this.transformPrefixer('rotate(26deg)'),
-			beat: 0,
+			beat: 1,
 			tockCounter: 0,
 			tolerance: 6
 		};
