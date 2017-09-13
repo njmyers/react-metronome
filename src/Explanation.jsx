@@ -44,7 +44,7 @@ counter += difference; // 1004
 		<p>Now should the metronome tick at round 2 or at round 3? At round 2 it will be ahead and at round 3 it will be behind in terms of precision. The implementation of a tolerance (ms) means that the metronome can be configured to prefer earlier or later. At tolerance of 4ms the metronome ticks on round 2 and at a lower tolerance would tick on round 3.</p>
 		<p>For some musicians a metronome that 'rushes' is preferable to one that 'drags'. Of course the metronome dragging and rushing has inspired many music jokes but in this instances they are actually correct. This metronome allows the user to choose.</p>
 		<p>A higher tolerance will result in a faster metronome and a lower tolerance will result in a slower metronome. Personally I need it bothe ways depending on the style of music I am playing! A value of 6 seems to work just perfectly and is more accurate then <a href="https://www.google.com/search?q=metronome" target="_blank" rel="noopener noreferrer">google's metronome</a>.</p>
-		<p>Metronome graphic used with <i className="fa fa-creative-commons"></i> license. Original work available <a href="https://thenounproject.com/term/metronome/28819/" target="_blank">here</a></p>	
+		<p>Metronome graphic used with <i className="fa fa-creative-commons"></i> license. Original work available <a href="https://thenounproject.com/term/metronome/28819/" target="_blank" rel="noopener noreferrer">here</a></p>	
 	</div>
 	)
 }
