@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  background: #ad3535;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.button {
+  box-sizing: border-box;
+  padding: 8px 14px;
+  width: 100px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.25s opacity ease;
+  -moz-transition: 0.25s opacity ease;
+  -ms-transition: 0.25s opacity ease;
+  transition: 0.25s opacity ease; }
+
+.button:hover {
+  opacity: .8; }
+
+.knob .circle {
+  background: blue;
+  width: 200px;
+  height: 200px;
+  clip-path: circle(100px at center); }
+
+.metronome {
+  background: url("./metronome-base.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 642px;
+  height: 1000px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center; }
+  .metronome .wand {
+    margin-bottom: 240px;
+    transform-origin: bottom; }
+
+.row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center; }
