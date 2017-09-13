@@ -49,7 +49,7 @@ As I am still learning React I tried to make a concept project that utilized as 
 
 Since the animations and ticks must refresh at different times we utilize the concept of the frame as a small timekeeper and then delegate changes from there. The function `frame()` is called every 4ms and the component updates on every frame call and from only that function.
 
-```JavaScript```
+```JavaScript
 this.setState(function(prevState) {
 
   // logic for determining which states change
@@ -62,7 +62,6 @@ this.setState(function(prevState) {
     tockCounter
   }
 }
-
 ```
 
 However keeping with the goal of React you can see that state usually preservered in pretty much everything excpet for the animated wand. Beat timer indicates when to 'tock' and when to 'tick' by incrementing but only at the specified interval.
