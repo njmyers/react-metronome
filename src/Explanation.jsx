@@ -5,7 +5,7 @@ return (
 	<div className="explanation">
 
 		<h4>Technical Explanation</h4>
-		<p>Reading time passed from `new Date()` gives quite a range of differences in the alotted time passed. For this project I set a 'framerate' so that the animations are smooth and also so the sounds and animations are all measured off the same `setInterval`. With a 'framerate' of 4 these incremental additions of time passed add up to the fact that the metronome hardly ever calculates the exact amount of expired time before the next beat. Consider the code below example.</p>
+		<p>For this project I set a baseline 'framerate' so that the animations are smooth and so the sounds and animations are both measured off the same `setInterval` clock. The interval isn't the time keeper though. Time is kept by measuring time passed between `new Date()` function calls. One can see by measuring the differences between calls that there is quite a range of in the alotted time passed. With a 'framerate' of 4ms these incremental additions of time passed will add up to a number but more importantly the resounding fact that the metronome will hardly ever calculate the exact amount of expired time required before the next beat. Consider the code below example.</p>
 
 <pre>{`let goal = 1000; // ms needed to pass for 60 BPM
 let oldDate = new Date();
