@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 
 // components
 import BPM from './BPM';
-
+import Explanation from './Explanation';
 // assets
-import click from './click.mp3';
+import tick from './tick.mp3';
+import tock from './tock.mp3';
 import wand from './metronome-wand.svg';
 
 class Metronome extends Component {
@@ -23,7 +24,8 @@ class Metronome extends Component {
 			tolerance: 6
 		};
 
-		this.tickSound = new Audio(click);
+		this.tickSound = new Audio(tick);
+		this.tockSound = new Audio(tock);
 		this.frameRate = 4;
 		this.switch = this.switch.bind(this);
 	}
@@ -125,12 +127,12 @@ class Metronome extends Component {
 	// ticking and tocking and helpers
 	tickTock(beat, tockCounter) {
 		if (beat == 1) {
-			this.tock()
+			this.tick()
 		} else {
 			if (tockCounter) {
-				this.tock();
-			} else {
 				this.tick();
+			} else {
+				this.tock();
 			}
 		}
 
@@ -152,9 +154,9 @@ class Metronome extends Component {
 		console.log('tock');
 
 		// ensures sounds don't run into each other
-		// this.tockSound.pause();
-		// this.tockSound.currentTime = 0;
-		// this.tockSound.play();		
+		this.tockSound.pause();
+		this.tockSound.currentTime = 0;
+		this.tockSound.play();		
 	}
 
 	// wand animation and helpers
@@ -189,25 +191,7 @@ class Metronome extends Component {
 						{this.state.toggle ? "OFF" : "ON"}
 					</button>
 				</div>
-				<div className="explanation">
-					<h4>Technical Explanation</h4>
-					<p>In the search for a more accurate digital metronome I have discovered that by reading time from the Date function using SetInterval gives quite a range of differences in the alotted time passed. This adds up to the fact that the metronome hardly ever calculates the exact amount of expired time before the next beat.</p>
-					<code>
-						// round 1 <br/>
-						let counter = 9992; // time expired in ms <br/>
-						let goal = 1000; // ms needed to pass for 60 BPM <br/>
-						<br/>
-						// round 2 <br/>
-						let timePassed = 5; <br/>
-						counter = 9992 + timePassed; // 9997 ms <br/>
-						<br/> 
-						// round 3 <br/>
-						let timePassed = 7;<br/>
-						counter = 9997 + timePassed // 1004 ms<br/>
-					</code>
-					<p>Now should the metronome click at round 2 or at round 3? At round 2 it will be ahead and at round 3 it will be behind. The implementation of a tolerance (ms) means that the metronome can be configured to click 'early'. At tolerance of >4 ms the metronome would click on round 2 and at a lower tolerance would click on round 3.</p>
-					<p>For some musicians a metronome that 'rushes' is preferable to one that 'drags'. Of course the metronome dragging and rushing has inspired many music jokes but in this instances they are actually correct. This metronome allows the user to choose.</p>
-				</div>
+				<Explanation />
 			</div>
 		);
 	}
