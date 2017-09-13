@@ -2,6 +2,7 @@
   "name": "react-metronome",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://njmyers.github.io/react-metronome",
   "dependencies": {
     "node-sass-chokidar": "0.0.3",
     "npm-run-all": "^4.1.1",
@@ -10,7 +11,8 @@
     "react-dnd-html5-backend": "^2.5.1",
     "react-dom": "^15.6.1",
     "react-knob": "^0.1.0",
-    "react-scripts": "1.0.13"
+    "react-scripts": "1.0.13",
+    "serve": "^6.0.6"
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/sass/style.sass -o src/",
@@ -19,6 +21,7 @@
     "start": "run-p start-js watch-css",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "serve": "serve -s build"
   }
 }

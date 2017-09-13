@@ -2,22 +2,27 @@
 
 body
 	margin: 0
+	color: white
 	background: #ad3535
 	+flexbox
 	justify-content: center
-	align-items: center
+	font-family: 'Lato', sans-serif
+
+#root
+	width: 60%
+	margin: 5% 0
 
 .button
+	background: white
 	box-sizing: border-box
 	padding: 8px 14px
-	width: 100px
+	width: 20%
 	border-radius: 12px
 	border: none
 	cursor: pointer
 	+transition(0.25s opacity ease)
 .button:hover
 	opacity: .8
-
 
 .knob
 	.circle
@@ -29,17 +34,35 @@ body
 
 .metronome
 	background: url('./metronome-base.svg')
-	background-size: 100%
+	background-size: 85%
 	background-position: center
 	background-repeat: no-repeat
-	width: 642px
-	height: 1000px
+	width: 60%
+	max-width: 700px
+	max-height: 700px
+	// height: 1000px
 	+flexbox
 	justify-content: center
+	align-items: center
 	.wand
-		margin-bottom: 240px
+		margin: 0 0 34% 4px
+		width: 30%
 		transform-origin: bottom
 
 .row
 	+flexbox
 	justify-content: center
+
+form
+	+flexbox
+	justify-content: space-between
+	input[type='number']
+		// width: 50px
+		// height: 0px
+		padding: 6px 0 3px 8px
+		font-size: 18px
+		border-radius: 4px
+		border: none
+		margin: 0 0 0 8px
+	label
+		font-size: 1.2em

@@ -5,71 +5,83 @@ class Wand extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			toggle: false,
-			counter: 0,
+			toggle: this.props.toggle,
+			ms: this.props.ms,
+			counter: this.props.counter,
 			rotation: 26,
 			direction: true,
 			style: {
 				transform: `rotate(26deg)`
 			}
 		}
-		this.ms = this.props.state.ms;
-		this.toggle = this.props.toggle;
 
 		// animation
-		this.frameRate = 4;
 
-		this.switch = this.switch.bind(this);
 	}
 
-	switch() {
+	// shouldComponentUpdate(nextProps, nextState) {
+
+	// }
+
+	// componentDidUpdate(prevProps, prevState) {
+	// 		console.log(`props: ${prevProps.toggle}`);
+	// 		console.log(`state: ${prevState.toggle}`);
+	// 		if (prevProps.toggle !== prevState.toggle) {
+	// 			this.setState({
+	// 				toggle: prevProps.toggle
+	// 			});
+
+	// 			// prevState.toggle ? this.stopAnimation() : this.startAnimation();
+	// 		}
+
+	// 		// prevState.toggle ? this.startAnimation() : this.stopAnimation();
+
+	// }
+
+	componentDidUpdate(prevProps, prevState) {
 		this.setState(function(prevState) {
-			// start or stop
-			prevState.toggle ? this.stopAnimation() : this.startAnimation();
-			// set state
-			return {
-				toggle: !prevState.toggle,
-			}
-		});
-	}
 
-	updateRotation() {
-		this.setState(function(prevState) {
-
-			console.log(prevState.direction);
-			// console.log(prevState.counter);
-			let rotation = this.calcRotation(prevState.counter, prevState.direction);
-			let counter, direction
-
-			if (prevState.counter === this.ms) {
-				counter = 0;
-				prevState.direction ? direction = false : direction = true;
-			} else {
-				counter = prevState.counter + this.frameRate;
-				direction = prevState.direction;
+			if (prevProps.ms !== prevState.ms) {
+				return {
+					ms: prevProps.ms
+				};
 			}
 
-			// set state
-			return {
-				counter: counter,
-				rotation,
-				direction,
-				style: {
-					transform: `rotate(${rotation}deg)`
-				}
-			}			
+			// console.log(prevProps.counter);s
+
+			// let rotation = this.calcRotation(prevState.counter, prevState.direction);
+			// let counter, direction
+
+			// if (prevState.counter === this.ms) {
+			// 	prevState.direction ? direction = false : direction = true;
+			// } else {
+			// 	counter = prevState.counter + this.frameRate;
+			// 	direction = prevState.direction;
+			// }
+
+			// // set state
+			// return {
+			// 	counter: counter,
+			// 	rotation,
+			// 	direction,
+			// 	style: {
+			// 		transform: `rotate(${rotation}deg)`
+			// 	}
+			// }			
 		})
 	}
 
-	startAnimation() {
-		this.wandID = setInterval(() => {
-			this.updateRotation()
-		}, this.frameRate)		
-	}
+	// startAnimation() {
+	// 	console.log('started');
+	// 	this.wandID = setInterval(() => {
+	// 		this.updateRotation()
+	// 	}, this.frameRate)		
+	// }
 
-	stopAnimation() {
-		clearInterval(this.wandID);
-	}
+	// stopAnimation() {
+	// 	console.log('stopped');
+	// 	clearInterval(this.wandID);
+	// }
 
 	calcRotation(counter, direction) {
 		let ratio = counter / this.ms;
@@ -80,12 +92,10 @@ class Wand extends Component {
 		}
 	}
 
-
 	render() {
 		return (
 			<div>
 				<img src={wand} style={this.state.style} className="wand" />
-				<button onClick={this.switch}>animate</button>
 			</div>
 		)
 	}

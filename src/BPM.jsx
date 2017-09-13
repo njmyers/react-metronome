@@ -1,34 +1,57 @@
 import React, { Component } from 'react';
-import { DragSource } from 'react-dnd';
+// import { DragSource } from 'react-dnd';
 // import { Knob } from 'react-knob'
-
-
 
 class BPM extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			bpm: 60
+			bpm: 60,
+			beat: 0,
+			tolerance: 6,
 		}
 
-		this.handleChange = this.handleChange.bind(this);
+		this.handleBPMChange = this.handleBPMChange.bind(this);
+		this.handleBeatChange = this.handleBeatChange.bind(this);
+		this.handleToleranceChange = this.handleToleranceChange.bind(this);
 	}
 
-	handleChange(event) {
+	handleBPMChange(event) {
 		this.setState({
 			bpm: event.target.value
 		});
 
-		this.props.callback(Number(event.target.value));
+		this.props.inheritBPM(event.target.value);
+	}
+
+	handleBeatChange(event) {
+		this.setState({
+			beat: event.target.value
+		})
+
+		this.props.inheritBeat(event.target.value);
+	}
+
+	handleToleranceChange(event) {
+		this.setState({
+			tolerance: event.target.value
+		})
+
+		this.props.inheritTolerance(event.target.value);
 	}
 
 	render() {
 		return (
 			<div>
 			<form name="controls">
-				<label>
-					BPM:
-					<input type="text" name="bpm" value={this.state.bpm} onChange={this.handleChange} />
+				<label>BPM:
+					<input type="number" min="30" max="320" name="bpm" value={this.state.bpm} onChange={this.handleBPMChange} />
+				</label>
+				<label>Beat:
+					<input type="number" min="0" max="7" name="beat" value={this.state.beat} onChange={this.handleBeatChange} />
+				</label>
+				<label>Tolerance:
+					<input type="number" min="0" max="7" name="beat" value={this.state.tolerance} onChange={this.handleToleranceChange} />
 				</label>
 			</form>
 			</div>
@@ -37,17 +60,3 @@ class BPM extends Component {
 }
 
 export default BPM;
-
-class Knob extends Component {
-
-	render() {
-		return (
-			<div className="knob">
-				<div className="circle">
-				</div>
-			<p>SASS TEXT</p>
-			</div>
-		)
-	}
-
-}
