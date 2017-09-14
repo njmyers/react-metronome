@@ -8,18 +8,26 @@ body
 	+flexbox
 	justify-content: center
 	font-family: 'Lato', sans-serif
+	text-shadow: 1px 1px 7px rgba(0, 0, 0, .2)
 
 #root
 	width: 75%
 	margin: 3% 0
+	max-width: 1000px
 
-h1
+.title
+	width: 100%
+	text-transform: uppercase
+	+flexbox
+	justify-content: space-between
 	margin: 0 0 6% 0
 	@include desktop
 		margin: 0 0 4% 0
-	font-size: 3.5em
+	font-size: 5em
+	@include tablet
+		font-size: 4em
 	@include all-phone
-		font-size: 3em
+		font-size: 2em
 
 .button
 	background: white
@@ -31,6 +39,7 @@ h1
 	cursor: pointer
 	+transition(0.25s opacity ease)
 	z-index: 1
+	box-shadow: 3px 3px 7px 0px rgba(0, 0, 0, 0.2)
 .button:hover
 	opacity: .8
 
@@ -42,6 +51,8 @@ h1
 	background-position: center
 	background-repeat: no-repeat
 	width: 60%
+	@include all-phone
+		width: 100%
 	max-width: 600px
 	max-height: 600px
 	+flexbox

@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 // components
 import BPM from './BPM';
 import Explanation from './Explanation';
+import Title from './Title';
+
 // assets
 import tick from './audio/tick.mp3';
 import tock from './audio/tock.mp3';
@@ -181,7 +183,7 @@ class Metronome extends Component {
 		return (
 			<div>
 				<div className="row">
-					<h1>Reactronome</h1>
+				<Title title="reactronome" />
 				</div>
 				<BPM inheritBPM={this.inheritBPM} inheritBeat={this.inheritBeat} inheritTolerance={this.inheritTolerance} />
 				<div className="row">
