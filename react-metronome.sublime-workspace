@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"letters",
+				"letters"
+			],
+			[
 				"no",
 				"noreferrer"
 			],
@@ -510,38 +514,16 @@
 			[
 				"inde",
 				"index0"
-			],
-			[
-				"Mo",
-				"moveLog"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "README.md",
+			"file": "src/BPM.jsx",
 			"settings":
 			{
-				"buffer_size": 4445,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/sass/mixins.sass",
-			"settings":
-			{
-				"buffer_size": 1413,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/Explanation.jsx",
-			"settings":
-			{
-				"buffer_size": 2670,
-				"encoding": "UTF-8",
+				"buffer_size": 1546,
 				"line_ending": "Unix"
 			}
 		},
@@ -549,16 +531,25 @@
 			"file": "src/Metronome.jsx",
 			"settings":
 			{
-				"buffer_size": 4267,
+				"buffer_size": 4304,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": ".gitignore",
+			"file": "src/Title.jsx",
 			"settings":
 			{
-				"buffer_size": 916,
+				"buffer_size": 501,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/index.html",
+			"settings":
+			{
+				"buffer_size": 1376,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -567,25 +558,7 @@
 			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 820,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/audio",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/BPM.jsx",
-			"settings":
-			{
-				"buffer_size": 1417,
-				"encoding": "UTF-8",
+				"buffer_size": 843,
 				"line_ending": "Unix"
 			}
 		},
@@ -593,8 +566,7 @@
 			"file": "src/sass/style.sass",
 			"settings":
 			{
-				"buffer_size": 1263,
-				"encoding": "UTF-8",
+				"buffer_size": 1408,
 				"line_ending": "Unix"
 			}
 		}
@@ -637,20 +609,29 @@
 	[
 		"/home/developer/Dropbox/www/sites/react-metronome",
 		"/home/developer/Dropbox/www/sites/react-metronome/public",
-		"/home/developer/Dropbox/www/sites/react-metronome/src"
+		"/home/developer/Dropbox/www/sites/react-metronome/src",
+		"/home/developer/Dropbox/www/sites/react-metronome/src/audio",
+		"/home/developer/Dropbox/www/sites/react-metronome/src/sass"
 	],
 	"file_history":
 	[
-		"/home/developer/Dropbox/www/sites/react-metronome/src/Controls.jsx",
 		"/home/developer/Dropbox/www/sites/react-metronome/src/sass/style.sass",
-		"/home/developer/Dropbox/www/sites/react-metronome/src/metronome-wand.svg",
-		"/home/developer/Dropbox/www/sites/react-metronome/src/Metronome.jsx",
-		"/home/developer/Dropbox/www/sites/react-metronome/src/Explanation.jsx",
-		"/home/developer/Dropbox/www/sites/react-metronome/src/BPM.jsx",
-		"/home/developer/Dropbox/www/sites/react-metronome/package.json",
-		"/home/developer/Dropbox/www/sites/react-metronome/README.md",
+		"/home/developer/Dropbox/www/sites/react-metronome/src/sass/range.sass",
 		"/home/developer/Dropbox/www/sites/react-metronome/public/index.html",
+		"/home/developer/Dropbox/www/sites/react-metronome/src/Explanation.jsx",
+		"/home/developer/Dropbox/www/sites/react-metronome/src/stretch.js",
+		"/home/developer/Dropbox/www/sites/react-metronome/src/BPM.jsx",
+		"/home/developer/Dropbox/www/sites/react-metronome/src/Metronome.jsx",
+		"/home/developer/Dropbox/www/sites/react-metronome/src/Title.jsx",
+		"/home/developer/Dropbox/www/sites/boilerplate-ui/src/js/stretch.js",
+		"/home/developer/Dropbox/www/sites/react-metronome/src/range.css",
+		"/home/developer/Dropbox/www/sites/react-metronome/README.md",
+		"/home/developer/Dropbox/www/sites/react-metronome/src/sass/mixins.sass",
 		"/home/developer/Dropbox/www/sites/react-metronome/.gitignore",
+		"/home/developer/Dropbox/www/sites/react-metronome/package.json",
+		"/home/developer/Dropbox/www/sites/react-metronome/src/audio",
+		"/home/developer/Dropbox/www/sites/react-metronome/src/Controls.jsx",
+		"/home/developer/Dropbox/www/sites/react-metronome/src/metronome-wand.svg",
 		"/home/developer/Dropbox/www/sites/react-metronome/src/metronome-base.svg",
 		"/home/developer/Dropbox/www/sites/react-metronome/src/logo.svg",
 		"/home/developer/Dropbox/www/sites/react-metronome/src/Wand.jsx",
@@ -761,14 +742,7 @@
 		"/Volumes/Sonny/Users/nicholasmyers/Projects/regex/replacer.js",
 		"/Volumes/Sonny/Users/nicholasmyers/Projects/euler/PrimeArrayFilter.js",
 		"/Volumes/Sonny/Users/nicholasmyers/Projects/euler/5.js",
-		"/Volumes/Sonny/Users/nicholasmyers/Projects/euler/3.js",
-		"/Volumes/Sonny/Users/nicholasmyers/Projects/euler/4.js",
-		"/Volumes/Sonny/Users/nicholasmyers/Projects/euler/12.js",
-		"/Volumes/Sonny/Users/nicholasmyers/Projects/interviewcake/highestProduct.js",
-		"/Volumes/Sonny/Users/nicholasmyers/Projects/interviewcake/productSuccesive.js",
-		"/Volumes/Sonny/Users/nicholasmyers/Projects/interviewcake/appleStock.js",
-		"/Volumes/Sonny/Users/nicholasmyers/Projects/euler/16.js",
-		"/Volumes/Sonny/Users/nicholasmyers/Projects/euler/9.js"
+		"/Volumes/Sonny/Users/nicholasmyers/Projects/euler/3.js"
 	],
 	"find":
 	{
@@ -786,6 +760,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"}",
+			" {",
+			";",
 			"parse",
 			"pre",
 			"round",
@@ -890,6 +867,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"",
 			"code",
 			"cpde",
 			"interval",
@@ -945,227 +923,24 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "README.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4445,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								566,
-								566
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/sass/mixins.sass",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1413,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": -0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/Explanation.jsx",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2670,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2670,
-								2670
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/Metronome.jsx",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4267,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								196,
-								196
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": ".gitignore",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 916,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								309,
-								309
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "package.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 820,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								321,
-								321
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "src/audio",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
 					"file": "src/BPM.jsx",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1417,
+						"buffer_size": 1546,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								888,
-								888
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1179,28 +954,140 @@
 					},
 					"stack_index": 5,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 8,
-					"file": "src/sass/style.sass",
+					"buffer": 1,
+					"file": "src/Metronome.jsx",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1263,
+						"buffer_size": 4304,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1043,
-								1043
+								3775,
+								3775
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 2792.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/Title.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 501,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								501,
+								501
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "public/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1376,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								142,
+								142
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 843,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								806,
+								806
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/sass/style.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1408,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								705,
+								705
 							]
 						],
 						"settings":
@@ -1209,10 +1096,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 702.0,
+						"translation.y": 324.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1235,18 +1122,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.65239669433,
 			1.0
 		],
 		"rows":
@@ -1314,7 +1194,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 256.0,
+	"side_bar_width": 193.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

@@ -183,7 +183,7 @@ class Metronome extends Component {
 		return (
 			<div>
 				<div className="row">
-				<Title title="reactronome" />
+				<Title text="reactronome" />
 				</div>
 				<BPM inheritBPM={this.inheritBPM} inheritBeat={this.inheritBeat} inheritTolerance={this.inheritTolerance} />
 				<div className="row">

@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 class Title extends Component {
 	constructor(props) {
 		super(props);
-		this.title = this.props.title;
+		this.text = this.props.text;
 	}
 
 	letterizer() {
-		let arr = this.title.split('');
+		let arr = this.text.split('');
 		let i = 0;
 		let spanner = arr.map(function(letter) {
 			i += 1;
