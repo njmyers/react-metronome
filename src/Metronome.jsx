@@ -144,7 +144,7 @@ class Metronome extends Component {
 	}
 
 	tick() {
-		console.log('tick');
+		// console.log('tick');
 
 		// ensures sounds don't run into each other
 		this.tickSound.pause();
@@ -153,7 +153,7 @@ class Metronome extends Component {
 	}
 
 	tock() {
-		console.log('tock');
+		// console.log('tock');
 
 		// ensures sounds don't run into each other
 		this.tockSound.pause();
@@ -196,7 +196,6 @@ class Metronome extends Component {
 						{this.state.toggle ? "OFF" : "ON"}
 					</button>
 				</div>
-				<Explanation />
 			</div>
 		);
 	}

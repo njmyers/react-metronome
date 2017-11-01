@@ -13,7 +13,7 @@
     "serve": "^6.1.0"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "run-s build-css build",
     "deploy": "gh-pages -d build",
     "build-css": "node-sass-chokidar src/sass/style.sass -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/sass/style.sass -o src/ --watch --recursive",
