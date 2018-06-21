@@ -9,6 +9,6 @@
   Cache-Control = "no-cache"
 
 [[headers]]
-  for "/*"
+  for = "/*"
   [headers.values]
   Cache-Control = "max-age=<31536000>"
