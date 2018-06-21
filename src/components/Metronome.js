@@ -30,7 +30,7 @@ class Metronome extends Component {
     };
 
     this.tickSound = new Audio(tick);
-    this.tockSound = new Audio();
+    this.tockSound = new Audio(tick);
     this.frameRate = 4;
     this.switch = this.switch.bind(this);
   }
