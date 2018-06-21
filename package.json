@@ -2,7 +2,6 @@
   "name": "react-metronome",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://njmyers.github.io/react-metronome",
   "dependencies": {
     "normalize.css": "^8.0.0",
     "react": "^15.6.1",
