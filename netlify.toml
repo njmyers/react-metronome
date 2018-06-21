@@ -2,13 +2,3 @@
   from = "/*"
   to = "/index.html"
   status = 200
-
-[[headers]]
-  for = ["/service-worker.js", "/index.html"]
-  [headers.values]
-  Cache-Control = "no-cache"
-
-[[headers]]
-  for = "/*"
-  [headers.values]
-  Cache-Control = "max-age=<31536000>"

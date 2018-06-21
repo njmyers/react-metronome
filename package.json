@@ -5,7 +5,6 @@
   "homepage": "http://njmyers.github.io/react-metronome",
   "dependencies": {
     "normalize.css": "^8.0.0",
-    "npm-run-all": "^4.1.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   },
@@ -24,6 +23,7 @@
     "lint-staged": "^7.2.0",
     "prettier": "^1.13.5",
     "@njmyers/react-scripts": "^1.1.1",
-    "node-sass-chokidar": "0.0.3"
+    "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "^4.1.1"
   }
 }
