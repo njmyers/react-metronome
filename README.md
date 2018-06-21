@@ -1,6 +1,6 @@
 # React Metronome
 
-[This project can be viewed here](https://njmyers.github.io/react-metronome/)
+[This project can be viewed here](https://react-metronome.netlify.com/)
 
 As someone with a history and background in music I've always been around the metronome. The simplicity of a quartz crystal metronome or a mechanical metronome was always a warm sound and the beat felt strong and reliable. Many digital metronomes (korg) left me wanting more because of the coldness of the sound and the beat did not feel correct. It's not only about precision but also about feel. This project will hopefully reflect that and will help me learn React.
 
