@@ -1,0 +1,40 @@
+{
+  "name": "@metronome/desktop",
+  "productName": "Metronome",
+  "version": "0.0.1",
+  "description": "An electron port of the metronome application",
+  "main": "app.js",
+  "scripts": {
+    "prebuild": "react-scripts build",
+    "build": "electron-packager app.js metronome --all",
+    "prestart": "react-scripts build",
+    "start": "electron .",
+    "test": "react-scripts test --env=jsdom"
+  },
+  "author": "Nick Myers <nickmyers111@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@metronome/web": "^0.1.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "electron": "^2.0.9",
+    "electron-packager": "^12.1.2",
+    "react-scripts": "next"
+  },
+  "homepage": "./",
+  "browserslist": {
+    "development": [
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 edge versions"
+    ],
+    "production": [
+      ">0.25%",
+      "not op_mini all",
+      "ie 11"
+    ]
+  }
+}
