@@ -1,0 +1,75 @@
+@import ../../sass/global
+
+body
+  margin: 0
+  color: white
+  background: #1b3867
+
+  +flexbox
+
+  justify-content: center
+  font-family: "Lato", sans-serif
+  text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2)
+
+#root
+  width: 75%
+  margin: 3% 0
+  max-width: 1000px
+
+.button
+  background: white
+  box-sizing: border-box
+  padding: 8px 14px
+  width: 20%
+  border-radius: 12px
+  border: none
+  cursor: pointer
+
+  +transition(0.25s opacity ease)
+
+  z-index: 1
+  box-shadow: 3px 3px 7px 0px rgba(0, 0, 0, 0.2)
+
+.button:hover
+  opacity: 0.8
+
+.metronome
+  margin: 4% 0
+
+  +desktop
+
+  background-size: 85%
+  background-position: center
+  background-repeat: no-repeat
+  width: 60%
+
+  +all-phone
+    width: 100%
+
+
+  max-width: 600px
+  max-height: 600px
+
+  +flexbox
+
+  justify-content: center
+  align-items: center
+
+  .wand
+    padding: 0 0 24% 4px
+    width: 25%
+    transform-origin: center 76%
+
+.row
+  +flexbox
+
+  justify-content: center
+
+a
+  color: white
+
+a:hover
+  opacity: 0.6
+
+a:visited
+  opacity: 0.6

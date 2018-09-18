@@ -1,0 +1,12 @@
+@import ../../sass/global
+
+.controls
+  width: 100%
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  grid-row-gap: 1rem
+  grid-column-gap: 2.4rem
+  font-size: 1.2em
+
+  +all-phone
+    grid-template-columns: repeat(1, 1fr)

@@ -1,0 +1,12 @@
+{
+  "name": "@metronome/assets",
+  "private": true,
+  "version": "0.0.1",
+  "description": "assets files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nick Myers <nickmyers111@gmail.com>",
+  "license": "ISC"
+}

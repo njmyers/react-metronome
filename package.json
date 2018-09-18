@@ -1,0 +1,27 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.3.2"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/react-native",
+      "**/react-native/**",
+      "**/native",
+      "**/native/**",
+      "**/expo",
+      "**/expo/**",
+      "**/react",
+      "**/react/**",
+      "**/react-dom",
+      "**/react-dom/**"
+    ]
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap"
+  }
+}
