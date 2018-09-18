@@ -1,6 +1,7 @@
 // @flow
 import * as React from 'react';
 // components
+import Layout from '../Layout';
 import Controls from '../Controls';
 import Title from '../Title';
 import Tick from '../Tick';
@@ -42,7 +43,7 @@ class Metronome extends React.Component<Props, State> {
 
   render() {
     return (
-      <section className="metronome_container">
+      <Layout>
         <Title text="metronome" />
         <Controls
           bpm={this.state.bpm}
@@ -65,7 +66,7 @@ class Metronome extends React.Component<Props, State> {
             <Switch />
           </Clock>
         </figure>
-      </section>
+      </Layout>
     );
   }
 }

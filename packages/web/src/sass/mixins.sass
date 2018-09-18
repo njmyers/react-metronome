@@ -1,17 +1,23 @@
 // mixins.sass
 
-$desktop-width: 1024px
+$desktop-width: 1440px
+$laptop-width: 1240px
 $tablet-width: 768px
-$phone-width: 440px
 $small-phone-width: 200px
+$large-phone-width: 600px
 
 //Browser Prefixes
 
-=transition($trans)
-  -webkit-transition: $trans
-  -moz-transition: $trans
-  -ms-transition: $trans
-  transition: $trans
+=transition($transition...)
+  -webkit-transition: $transition
+  -moz-transition: $transition
+  -ms-transition: $transition
+  transition: $transition
+
+=transform($transform)
+  -webkit-transform: $transform
+  -ms-transform: $transform
+  transform: $transform
 
 =flexbox
   display: -webkit-box
@@ -19,10 +25,6 @@ $small-phone-width: 200px
   display: -ms-flexbox
   display: -webkit-flex
   display: flex
-
-=col($col, $sum, $gap)
-  width: percentage($col / $sum) - $gap
-  box-sizing: border-box
 
 =fontFace($family, $src, $style: normal, $weight: normal)
   @font-face
@@ -32,26 +34,30 @@ $small-phone-width: 200px
     font-style: $style
     font-weight: $weight
 
-=all-mobile
-  @media (min-width: $small-phone-width) and (max-width: $desktop-width)
+=desktop
+  @media (min-width: $desktop-width)
     @content
 
-=small-phone
-  @media (min-width: $small-phone-width) and (max-width: $phone-width - 1)
+=laptop
+  @media (min-width: $laptop-width) and (max-width: $desktop-width - 1)
+    @content
+
+=all-mobile
+  @media (min-width: $small-phone-width) and (max-width: $laptop-width - 1)
+    @content
+
+=tablet
+  @media (min-width: $tablet-width) and (max-width: $laptop-width - 1)
     @content
 
 =all-phone
   @media (min-width: $small-phone-width) and (max-width: $tablet-width - 1)
     @content
 
-=phone
-  @media (min-width: $phone-width) and (max-width: $tablet-width - 1)
+=large-phone
+  @media (min-width: $large-phone-width) and (max-width: $tablet-width - 1)
     @content
 
-=tablet
-  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1)
-    @content
-
-=desktop
-  @media (min-width: $desktop-width)
+=small-phone
+  @media (min-width: $small-phone-width) and (max-width: $large-phone-width - 1)
     @content

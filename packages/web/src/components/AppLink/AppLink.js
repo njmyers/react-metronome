@@ -1,9 +1,10 @@
 import * as React from 'react';
+import Layout from '../Layout';
 
 const AppLink = () => (
-  <section>
+  <Layout>
     <p>Sorry but this app won't work in the browser on iPhone.</p>
-  </section>
+  </Layout>
 );
 
 export default AppLink;

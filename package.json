@@ -25,6 +25,7 @@
     "bootstrap": "lerna bootstrap",
     "prebuild-web": "lerna bootstrap",
     "build-web": "lerna run build --scope=\"@metronome/web\"",
+    "build-native": "lerna run build --scope=\"@metronome/native\"",
     "lerna": "lerna"
   }
 }
