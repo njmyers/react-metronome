@@ -1,9 +1,9 @@
+[build]
+  publish = "packages/web/build"
+  command = "yarn build-web"
+  environment = { YARN_VERSION = '1.9.4' }
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-
-[context.production]
-  publish = "packages/web/build"
-  command = "yarn build-web"
-  environment = { YARN_VERSION = '1.9.4' }
