@@ -64,3 +64,12 @@ typings/
 node_modules/**/*
 .expo/*
 npm-debug.*
+
+**/metronome-darwin-x64/*
+**/metronome-linux-arm64/*
+**/metronome-linux-armv71/*
+**/metronome-linux-ia32/*
+**/metronome-linux-x64/*
+**/metronome-mas-x64/*
+**/metronome-win32-ia32/*
+**/metronome-win32-x64/*

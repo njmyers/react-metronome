@@ -1,8 +1,12 @@
 {
   "name": "root",
   "private": true,
-  "devDependencies": {
-    "lerna": "^3.3.2"
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "prebuild-web": "lerna bootstrap",
+    "build-web": "lerna run build --scope=\"@metronome/web\"",
+    "build-native": "lerna run build --scope=\"@metronome/native\"",
+    "lerna": "lerna"
   },
   "workspaces": {
     "packages": [
@@ -18,14 +22,12 @@
       "**/react",
       "**/react/**",
       "**/react-dom",
-      "**/react-dom/**"
+      "**/react-dom/**",
+      "**/electron",
+      "**/electron**"
     ]
   },
-  "scripts": {
-    "bootstrap": "lerna bootstrap",
-    "prebuild-web": "lerna bootstrap",
-    "build-web": "lerna run build --scope=\"@metronome/web\"",
-    "build-native": "lerna run build --scope=\"@metronome/native\"",
-    "lerna": "lerna"
+  "devDependencies": {
+    "lerna": "^3.3.2"
   }
 }
