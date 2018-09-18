@@ -1,0 +1,49 @@
+@import ../../sass/global
+
+body
+  margin: 0
+  color: white
+  background: #1b3867
+  font-family: "Lato", sans-serif
+  text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2)
+
+#root
+  width: 100%
+
+  +flexbox
+
+  justify-content: center
+  align-items: center
+
+.metronome
+  &_container
+    +flexbox
+
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    padding: 2% 0 3rem 0
+
+  &_figure
+    margin: 0
+    padding: 0
+    background-size: 100%
+    background-position: center center
+    background-repeat: no-repeat
+    width: 100%
+    max-width: 560px
+
+    +flexbox
+
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+a
+  color: white
+
+a:hover
+  opacity: 0.6
+
+a:visited
+  opacity: 0.6

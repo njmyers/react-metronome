@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Metronome from './components/Metronome';
+import WebApp from './pages/WebApp';
 import registerServiceWorker from './registerServiceWorker';
-import 'normalize.css';
 
-ReactDOM.render(<Metronome />, document.getElementById('root'));
+ReactDOM.render(<WebApp />, document.getElementById('root'));
 registerServiceWorker();

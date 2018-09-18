@@ -16,11 +16,11 @@ class Tick extends React.Component {
     if (this.props.beats % this.props.beat === 0) {
       this.tick.pause();
       this.tick.currentTime = 0;
-      this.tick();
+      this.tick.play();
     } else {
       this.tock.pause();
       this.tock.currentTime = 0;
-      this.tock();
+      this.tock.play();
     }
   };
 

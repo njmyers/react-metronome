@@ -18,7 +18,7 @@ class Title extends React.Component<Props> {
       i += 1;
       return <span key={i}>{letter}</span>;
     });
-    console.log(spanner);
+
     return spanner;
   }
 

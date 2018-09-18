@@ -3,14 +3,21 @@ import * as React from 'react';
 import './controls.sass';
 import './range.sass';
 
-const Controls = ({ bpm, beat, tolerance, onChange }) => (
-  <aside className="controls">
+type Props = {
+  bpm: number,
+  beat: number,
+  tolerance: number,
+  onChange: Function,
+};
+
+const Controls = ({ bpm, beat, tolerance, onChange }: Props) => (
+  <section className="controls">
     <div>
       <label>BPM: {bpm}</label>
       <input
         type="range"
         min="30"
-        max="320"
+        max="400"
         name="bpm"
         value={bpm}
         onChange={onChange}
@@ -39,7 +46,7 @@ const Controls = ({ bpm, beat, tolerance, onChange }) => (
         onChange={onChange}
       />
     </div>
-  </aside>
+  </section>
 );
 
 export default Controls;
