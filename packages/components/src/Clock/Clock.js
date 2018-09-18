@@ -12,17 +12,18 @@ type State = {
   date: number,
   counter: number,
   beats: number,
+  ms: number,
   running: boolean,
 };
 
 const bpmToMs = (bpm) => (60 * 1000) / bpm;
-const msToBpm = (ms) => (ms / 1000) * 60;
 
 class Clock extends React.Component<Props, State> {
   state = {
     date: 0,
     counter: 0,
     beats: 0,
+    ms: 1000,
     running: false,
   };
 
@@ -34,13 +35,19 @@ class Clock extends React.Component<Props, State> {
     frameRate: 4,
   };
 
-  ms = () => bpmToMs(this.props.bpm);
+  static getDerivedStateFromProps(props: Props, state: State) {
+    return {
+      ms: bpmToMs(props.bpm),
+    };
+  }
 
   start = () => {
     this.resetState();
     this.timerID = setInterval(() => {
       this.frame();
     }, this.props.frameRate);
+
+    this.setState((state) => ({ running: true }));
   };
 
   stop = () => {
@@ -48,7 +55,8 @@ class Clock extends React.Component<Props, State> {
       clearInterval(this.timerID);
     }
 
-    this.resetState();
+    // this.resetState();
+    this.setState((state) => ({ running: false }));
   };
 
   resetState() {
@@ -70,7 +78,7 @@ class Clock extends React.Component<Props, State> {
 
   shouldBeat = (state: State) => {
     const { counter } = state;
-    const ms = this.ms();
+    const ms = this.state.ms;
 
     return Math.abs(counter - ms) <= this.props.tolerance || counter >= ms;
   };
@@ -111,6 +119,7 @@ class Clock extends React.Component<Props, State> {
         beats: this.state.beats,
         running: this.state.running,
         counter: this.state.counter,
+        ms: this.state.ms,
       })
     );
   }
