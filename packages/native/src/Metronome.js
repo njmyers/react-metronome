@@ -6,7 +6,9 @@ import Controls from './Controls';
 import Tick from './Tick';
 import Buttons from './Buttons';
 import Clock from '@metronome/components/src/Clock';
-import base from '@metronome/assets/base.svg';
+// assets
+import Base from './Base';
+import { blue, white } from '@metronome/assets/colors';
 
 const Animator = () => null;
 
@@ -33,6 +35,7 @@ export default class App extends React.Component {
     return (
       <View style={styles.appView}>
         <Controls {...this.state} onBPM={this.onBPM} onBeat={this.onBeat} />
+        <Base />
         <Clock bpm={this.state.bpm}>
           <Buttons onTap={this.onTap} />
           <Tick />
@@ -45,19 +48,9 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   appView: {
-    backgroundColor: '#1b3867',
-    flex: 8,
-    flexDirection: 'column',
-  },
-  buttonsContainer: {
-    width: '30%',
-    alignSelf: 'center',
+    backgroundColor: blue,
     flex: 1,
-    justifyContent: 'space-between',
-    flexDirection: 'row',
-  },
-  button: {
-    backgroundColor: 'white',
-    padding: '10pt',
+    padding: '2%',
+    flexDirection: 'column',
   },
 });

@@ -2,8 +2,10 @@
 import * as React from 'react';
 import Slider from 'react-native-slider';
 import { StyleSheet, View } from 'react-native';
-
+// components
 import Lato from './Lato';
+// styles
+import { white, lightBlue } from '@metronome/assets/colors';
 
 type Props = {
   bpm: number,
@@ -21,9 +23,9 @@ class Controls extends React.Component<Props> {
           style={style.slider}
           trackStyle={track}
           thumbStyle={thumb}
-          minimumTrackTintColor="white"
-          maximumTrackTintColor="white"
-          thumbTintColor="#82a2c1"
+          minimumTrackTintColor={white}
+          maximumTrackTintColor={white}
+          thumbTintColor={lightBlue}
           value={this.props.bpm}
           onValueChange={this.props.onBPM}
           minimumValue={20}
@@ -35,9 +37,9 @@ class Controls extends React.Component<Props> {
           style={style.slider}
           trackStyle={track}
           thumbStyle={thumb}
-          minimumTrackTintColor="white"
-          maximumTrackTintColor="white"
-          thumbTintColor="#82a2c1"
+          minimumTrackTintColor={white}
+          maximumTrackTintColor={white}
+          thumbTintColor={lightBlue}
           value={this.props.beat}
           onValueChange={this.props.onBeat}
           minimumValue={0}
@@ -64,13 +66,14 @@ const style = StyleSheet.create({
   container: {
     flex: 2,
     padding: '5%',
+    zIndex: 1,
   },
   slider: {
     marginTop: 10,
   },
   label: {
-    marginTop: 20,
-    color: 'white',
+    // marginTop: 20,
+    color: white,
     fontSize: 20,
   },
 });

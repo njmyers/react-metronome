@@ -20,11 +20,12 @@ class Buttons extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    width: '30%',
+    width: '100%',
     alignSelf: 'center',
     flex: 1,
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
     flexDirection: 'row',
+    zIndex: 1,
   },
 });
 

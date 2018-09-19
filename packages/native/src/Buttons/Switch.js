@@ -8,7 +8,6 @@ class Switch extends React.Component {
     return (
       <Button
         onPress={this.props.running ? this.props.stop : this.props.start}
-        color="white"
         style={styles.button}
       >
         <Lato style={styles.text}>{this.props.running ? 'Stop' : 'Start'}</Lato>
