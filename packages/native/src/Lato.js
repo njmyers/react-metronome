@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Text, StyleSheet } from 'react-native';
+import { Text, StyleSheet, StyleSheetRegistry } from 'react-native';
 import { Font } from 'expo';
 
 class Lato extends React.Component {
@@ -12,17 +12,16 @@ class Lato extends React.Component {
       Lato: require('@metronome/assets/lato/Lato-Regular.ttf'),
     })
       .then(() => {
-        this.setState(
-          {
-            loaded: true,
-          },
-          console.log(this.state)
-        );
+        this.setState({
+          loaded: true,
+        });
       })
       .catch((error) => {
         console.log(error);
       });
   };
+
+  getChildStyleSheet = () => StyleSheet.flatten(this.props.style);
 
   componentDidMount() {
     this.loadFont();
@@ -30,7 +29,7 @@ class Lato extends React.Component {
 
   render() {
     return this.state.loaded ? (
-      <Text style={{ ...this.props.styles, ...styles.text }}>
+      <Text style={[this.getChildStyleSheet(), styles.lato]}>
         {this.props.children}
       </Text>
     ) : null;
@@ -38,7 +37,7 @@ class Lato extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  text: {
+  lato: {
     fontFamily: 'Lato',
   },
 });

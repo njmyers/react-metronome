@@ -2,9 +2,9 @@ import React from 'react';
 import Expo from 'expo';
 import { StyleSheet, Text, View, Header, Image } from 'react-native';
 
-import Controls from '../Controls';
-import Tick from '../Tick';
-import Buttons from '../Buttons';
+import Controls from './Controls';
+import Tick from './Tick';
+import Buttons from './Buttons';
 import Clock from '@metronome/components/src/Clock';
 import base from '@metronome/assets/base.svg';
 
