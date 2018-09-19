@@ -62,7 +62,7 @@ typings/
 .env
 
 node_modules/**/*
-.expo/*
+.expo/
 npm-debug.*
 
 metronome-darwin-x64/
