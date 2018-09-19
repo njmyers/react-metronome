@@ -13,7 +13,7 @@ type Props = {
 const Controls = ({ bpm, beat, tolerance, onChange }: Props) => (
   <section className="controls">
     <div>
-      <label>BPM: {bpm}</label>
+      <label className="controls_label">BPM: {bpm}</label>
       <input
         type="range"
         min="30"
@@ -24,9 +24,8 @@ const Controls = ({ bpm, beat, tolerance, onChange }: Props) => (
       />
     </div>
     <div>
-      <label className="beat_input">Beat: {beat}</label>
+      <label className="controls_label">Beat: {beat}</label>
       <input
-        className="beat"
         type="range"
         min="0"
         max="7"
@@ -36,7 +35,7 @@ const Controls = ({ bpm, beat, tolerance, onChange }: Props) => (
       />
     </div>
     <div>
-      <label>Tolerance: {tolerance}</label>
+      <label className="controls_label">Tolerance: {tolerance}</label>
       <input
         type="range"
         min="0"

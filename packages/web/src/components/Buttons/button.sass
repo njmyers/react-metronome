@@ -1,13 +1,13 @@
 @import ../../sass/global
 
 .button
-  margin-top: 4rem
+  margin: 0 3rem
   background: white
   box-sizing: border-box
   padding: 8px 14px
-  width: 20%
   border-radius: 12px
   border: none
+  width: 80px
   cursor: pointer
 
   +transition(0.25s opacity ease)
@@ -20,3 +20,17 @@
 
   &:focus
     outline: none
+
+.buttons
+  &_container
+    margin-top: 4rem
+
+    +flexbox
+
+    justify-content: space-between
+
+    & > :first-child
+      margin-left: 0
+
+    & > :last-child
+      margin-right: 0

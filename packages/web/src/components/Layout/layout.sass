@@ -1,5 +1,26 @@
 @import ../../sass/global
 
+html
+  box-sizing: border-box
+
+*, *:before, *:after
+  box-sizing: inherit
+
+body
+  margin: 0
+  color: white
+  background: #1b3867
+  font-family: "Lato", sans-serif
+  text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2)
+
+#root
+  width: 100%
+
+  +flexbox
+
+  justify-content: center
+  align-items: center
+
 .page
   +flexbox
 

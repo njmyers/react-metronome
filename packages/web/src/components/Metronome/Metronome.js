@@ -5,18 +5,14 @@ import Layout from '../Layout';
 import Controls from '../Controls';
 import Title from '../Title';
 import Tick from '../Tick';
+import Buttons from '../Buttons';
 import Clock from '@metronome/components/src/Clock';
 import Rotator from '@metronome/components/src/Rotator';
-import Tap from '@metronome/components/src/Tap';
-import TapButton from '../TapButton';
 import Wand from '../Wand';
-import Switch from '../Switch';
 // assets
 import base from '@metronome/assets/base.svg';
 // styles
 import './metronome.sass';
-
-type Props = {};
 
 type State = {
   bpm: number,
@@ -24,7 +20,7 @@ type State = {
   beat: number,
 };
 
-class Metronome extends React.Component<Props, State> {
+class Metronome extends React.Component<{}, State> {
   state = {
     bpm: 60,
     tolerance: 6,
@@ -51,9 +47,6 @@ class Metronome extends React.Component<Props, State> {
           tolerance={this.state.tolerance}
           onChange={this.onChange}
         />
-        <Tap cb={this.onTap}>
-          <TapButton />
-        </Tap>
         <figure
           className="metronome_figure"
           style={{ backgroundImage: `url("${base}")` }}
@@ -63,7 +56,7 @@ class Metronome extends React.Component<Props, State> {
             <Rotator>
               <Wand />
             </Rotator>
-            <Switch />
+            <Buttons onTap={this.onTap} />
           </Clock>
         </figure>
       </Layout>
