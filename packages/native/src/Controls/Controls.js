@@ -1,6 +1,8 @@
 // @flow
 import * as React from 'react';
-import { StyleSheet, View, Slider, Text } from 'react-native';
+import { StyleSheet, View, Slider } from 'react-native';
+
+import Lato from '../Lato';
 
 type Props = {
   bpm: number,
@@ -13,6 +15,7 @@ class Controls extends React.Component<Props> {
   render() {
     return (
       <View style={style.container}>
+        <Lato style={style.label}>BPM: {this.props.bpm}</Lato>
         <Slider
           style={style.slider}
           value={this.props.bpm}
@@ -21,7 +24,7 @@ class Controls extends React.Component<Props> {
           maximumValue={400}
           step={5}
         />
-        <Text style={style.label}>{this.props.bpm}</Text>
+        <Lato style={style.label}>Beat: {this.props.beat}</Lato>
         <Slider
           style={style.slider}
           value={this.props.beat}
@@ -30,7 +33,6 @@ class Controls extends React.Component<Props> {
           maximumValue={11}
           step={1}
         />
-        <Text style={style.label}>{this.props.beat}</Text>
       </View>
     );
   }
@@ -39,9 +41,12 @@ class Controls extends React.Component<Props> {
 const style = StyleSheet.create({
   container: {
     flex: 2,
+    padding: '5%',
   },
   slider: {},
-  label: {},
+  label: {
+    color: 'white',
+  },
 });
 
 export default Controls;

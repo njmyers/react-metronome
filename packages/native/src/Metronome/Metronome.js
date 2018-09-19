@@ -1,23 +1,14 @@
 import React from 'react';
 import Expo from 'expo';
-import { StyleSheet, Text, View, Button, Header } from 'react-native';
+import { StyleSheet, Text, View, Header, Image } from 'react-native';
 
 import Controls from '../Controls';
 import Tick from '../Tick';
+import Buttons from '../Buttons';
 import Clock from '@metronome/components/src/Clock';
+import base from '@metronome/assets/base.svg';
 
-class Animator extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Button onPress={this.props.start} title="Start" />
-        <Button onPress={this.props.stop} title="Stop" />
-        <Text>Beats: {this.props.beats}</Text>
-        <Tick beats={this.props.beats} />
-      </View>
-    );
-  }
-}
+const Animator = () => null;
 
 export default class App extends React.Component {
   state = {
@@ -34,11 +25,17 @@ export default class App extends React.Component {
     this.setState((state) => ({ beat: value }));
   };
 
+  onTap = (value) => {
+    this.setState((state) => ({ bpm: value }));
+  };
+
   render() {
     return (
       <View style={styles.appView}>
         <Controls {...this.state} onBPM={this.onBPM} onBeat={this.onBeat} />
         <Clock bpm={this.state.bpm}>
+          <Buttons onTap={this.onTap} />
+          <Tick />
           <Animator />
         </Clock>
       </View>
@@ -48,12 +45,19 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   appView: {
-    flex: 1,
+    backgroundColor: '#1b3867',
+    flex: 8,
+    flexDirection: 'column',
   },
-  container: {
-    flex: 2,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+  buttonsContainer: {
+    width: '30%',
+    alignSelf: 'center',
+    flex: 1,
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+  },
+  button: {
+    backgroundColor: 'white',
+    padding: '10pt',
   },
 });
