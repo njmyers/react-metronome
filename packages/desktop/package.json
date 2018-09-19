@@ -6,7 +6,7 @@
   "main": "app.js",
   "scripts": {
     "prebuild": "react-scripts build",
-    "build": "electron-packager app.js metronome --all",
+    "build": "electron-packager app.js metronome --out=applications",
     "prestart": "react-scripts build",
     "start": "electron .",
     "test": "react-scripts test --env=jsdom"
@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "electron": "^2.0.9",
+    "electron-builder": "^20.28.4",
     "electron-packager": "^12.1.2",
     "react-scripts": "next"
   },
