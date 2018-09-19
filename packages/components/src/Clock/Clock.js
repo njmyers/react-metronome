@@ -32,7 +32,7 @@ class Clock extends React.Component<Props, State> {
   static defaultProps = {
     bpm: 60,
     tolerance: 3,
-    frameRate: 4,
+    frameRate: 10,
   };
 
   static getDerivedStateFromProps(props: Props, state: State) {
@@ -102,6 +102,8 @@ class Clock extends React.Component<Props, State> {
         const date = Date.now();
         const difference = date - prevState.date;
         const counter = prevState.counter + difference;
+
+        console.log(difference);
 
         return {
           date,
