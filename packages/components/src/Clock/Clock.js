@@ -55,7 +55,7 @@ class Clock extends React.Component<Props, State> {
       clearInterval(this.timerID);
     }
 
-    // this.resetState();
+    this.resetState();
     this.setState((state) => ({ running: false }));
   };
 
