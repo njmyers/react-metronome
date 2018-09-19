@@ -36,14 +36,11 @@ class Tap extends React.Component<Props, State> {
   tap = () => {
     const now = Date.now();
 
-    this.setState(
-      (state) => ({
-        last: now,
-        intervals: state.last ? [...state.intervals, now - state.last] : [],
-        tempo: state.intervals.length > 1 ? this.reduceTempo() : state.tempo,
-      }),
-      console.log(this.state)
-    );
+    this.setState((state) => ({
+      last: now,
+      intervals: state.last ? [...state.intervals, now - state.last] : [],
+      tempo: state.intervals.length > 1 ? this.reduceTempo() : state.tempo,
+    }));
 
     // force clear intervals after 2 seconds
     if (this.state.timeout) {
