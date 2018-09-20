@@ -27,12 +27,12 @@ class Clock extends React.Component<Props, State> {
     running: false,
   };
 
-  timerID: null | IntervalID;
+  timerID: null | TimeoutID;
 
   static defaultProps = {
     bpm: 60,
     tolerance: 3,
-    frameRate: 10,
+    frameRate: 4,
   };
 
   static getDerivedStateFromProps(props: Props, state: State) {
@@ -43,7 +43,7 @@ class Clock extends React.Component<Props, State> {
 
   start = () => {
     this.resetState();
-    this.timerID = setInterval(() => {
+    this.timerID = setTimeout(() => {
       this.frame();
     }, this.props.frameRate);
 
@@ -52,7 +52,7 @@ class Clock extends React.Component<Props, State> {
 
   stop = () => {
     if (this.timerID) {
-      clearInterval(this.timerID);
+      clearTimeout(this.timerID);
     }
 
     this.resetState();
@@ -84,14 +84,17 @@ class Clock extends React.Component<Props, State> {
   };
 
   // only update setInterval state here
-  frame() {
+  frame = () => {
+    const date = Date.now();
+
     this.setState((prevState) => {
       // this sets accuracy so that the metronome does not 'drag'
       // metronome will click up to tolerance level milliseconds before
       if (this.shouldBeat(prevState)) {
-        const date = Date.now();
         const counter = 0;
         const beats = prevState.beats + 1;
+
+        console.log(prevState.counter);
 
         return {
           date,
@@ -99,11 +102,8 @@ class Clock extends React.Component<Props, State> {
           beats,
         };
       } else {
-        const date = Date.now();
         const difference = date - prevState.date;
         const counter = prevState.counter + difference;
-
-        console.log(difference);
 
         return {
           date,
@@ -111,7 +111,11 @@ class Clock extends React.Component<Props, State> {
         };
       }
     });
-  }
+
+    this.timerID = setTimeout(() => {
+      this.frame();
+    }, this.props.frameRate);
+  };
 
   render() {
     return React.Children.map(this.props.children, (child) =>

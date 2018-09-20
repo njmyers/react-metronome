@@ -9,7 +9,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "bezier": "^0.1.0",
+    "bezier-easing": "^2.1.0",
     "fast-memoize": "^2.5.1",
     "react": "^16.5.1",
     "react-dom": "^16.5.1"

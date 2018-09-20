@@ -1,7 +1,12 @@
 // @flow
 import * as React from 'react';
-import bezier from 'bezier';
+import Bezier from 'bezier-easing';
 import memoize from 'fast-memoize';
+
+const points = [0, 0.3, 0.7, 1];
+
+const cubic = Bezier(...points);
+const reverseCubic = Bezier(...points.reverse());
 
 type Props = {
   ms: number,
@@ -9,8 +14,6 @@ type Props = {
   beats: number,
   children: React.Node,
 };
-
-const cubic = bezier.prepare(4);
 
 class Rotator extends React.Component<Props> {
   prebuildCache = (limit: number = 10000) => {
@@ -23,12 +26,13 @@ class Rotator extends React.Component<Props> {
    * Apply gravity like cubic bezier curve and memoize the calculations
    * @param {ratio} number t or time along the bezier curve
    */
-  gravity = memoize((ratio) => cubic([-28, -22, 22, 28], ratio));
+  gravity = (ratio) => (ratio < 1 ? cubic(ratio) : reverseCubic(2 - ratio));
 
   calcRotation = () =>
-    this.gravity(this.props.counter / this.props.ms) *
+    this.gravity((this.props.counter / this.props.ms) * 2) *
     // multiply by -1 to signal change in direction
-    (this.props.beats % 2 === 0 ? -1 : 1);
+    (this.props.beats % 2 === 0 ? -28 : 28);
+  // (this.props.beats % 2 === 0 ? 28 : -28);
 
   componentDidMount() {
     this.prebuildCache();

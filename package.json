@@ -2,8 +2,8 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "bootstrap": "lerna bootstrap",
-    "prebuild-web": "lerna bootstrap",
+    "bootstrap": "lerna bootstrap && lerna link",
+    "prebuild-web": "lerna bootstrap && lerna link",
     "build-web": "lerna run build --scope=\"@metronome/web\"",
     "build-native": "lerna run build --scope=\"@metronome/native\"",
     "lerna": "lerna"
@@ -13,18 +13,19 @@
       "packages/*"
     ],
     "nohoist": [
+      "**/react",
+      "**/react/**",
+      "**/react-dom",
+      "**/react-dom/**",
       "**/react-native",
       "**/react-native/**",
       "**/native",
       "**/native/**",
       "**/expo",
       "**/expo/**",
-      "**/react",
-      "**/react/**",
-      "**/react-dom",
-      "**/react-dom/**",
       "**/electron",
-      "**/electron**"
+      "**/bezier-easing",
+      "**/fast-memoize"
     ]
   },
   "devDependencies": {
