@@ -1,16 +1,18 @@
 import React from 'react';
 import Expo from 'expo';
-import { StyleSheet, Text, View, Header, Image } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
 import Controls from './Controls';
 import Tick from './Tick';
 import Buttons from './Buttons';
+import Animator from './Animator';
 import Clock from '@metronome/components/src/Clock';
+import Rotator from '@metronome/components/src/Rotator';
 // assets
 import Base from './Base';
 import { blue, white } from '@metronome/assets/colors';
 
-const Animator = () => null;
+let time;
 
 export default class App extends React.Component {
   state = {
@@ -19,7 +21,6 @@ export default class App extends React.Component {
   };
 
   onBPM = (value) => {
-    console.log(value);
     this.setState((state) => ({ bpm: value }));
   };
 
@@ -39,7 +40,9 @@ export default class App extends React.Component {
         <Clock bpm={this.state.bpm}>
           <Buttons onTap={this.onTap} />
           <Tick />
-          <Animator />
+          <Rotator>
+            <Animator />
+          </Rotator>
         </Clock>
       </View>
     );

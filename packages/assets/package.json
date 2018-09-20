@@ -2,8 +2,7 @@
   "name": "@metronome/assets",
   "private": true,
   "version": "0.0.1",
-  "description": "assets files",
-  "main": "index.js",
+  "description": "Asset files for metronome application",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

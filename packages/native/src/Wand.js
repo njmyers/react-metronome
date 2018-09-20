@@ -1,22 +1,35 @@
 import * as React from 'react';
 import { View, StyleSheet, Dimensions } from 'react-native';
 import { Svg } from 'expo';
-import { white } from '@metronome/assets/colors';
+import { lightBlue } from '@metronome/assets/colors';
 
-const { Path } = Svg;
+const { Polygon, Path } = Svg;
 
 const { width, height } = Dimensions.get('window');
 
-const Base = () => (
+const Wand = () => (
   <View style={style}>
-    <Svg width={width * 0.6} height={width * 0.9} viewBox="0 0 100 150">
+    <Svg
+      width={width * 0.6}
+      height={width * 0.9}
+      origin="50 125"
+      viewBox="0 0 100 150"
+    >
       <Path
         fill="none"
-        stroke={white}
+        stroke={lightBlue}
         strokeWidth="5"
         strokeLinejoin="round"
         strokeLinecap="round"
-        d="M27 10 H 73 L 90 140 H 10 Z"
+        d="M50 25 V 125"
+      />
+      <Polygon
+        points="46 50, 54 50, 50 63"
+        fill={lightBlue}
+        stroke={lightBlue}
+        strokeWidth="5"
+        strokeLinejoin="round"
+        strokeLinecap="round"
       />
     </Svg>
   </View>
@@ -32,4 +45,4 @@ const style = [
   },
 ];
 
-export default Base;
+export default Wand;
