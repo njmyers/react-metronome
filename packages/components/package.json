@@ -12,6 +12,10 @@
     "bezier-easing": "^2.1.0",
     "fast-memoize": "^2.5.1",
     "react": "^16.5.1",
-    "react-dom": "^16.5.1"
+    "react-dom": "^16.5.1",
+    "react-redux": "^5.0.7",
+    "redux-thunk": "^2.3.0",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6"
   }
 }

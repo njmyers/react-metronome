@@ -1,8 +1,10 @@
 // @flow
 import * as React from 'react';
 import tick from '@metronome/assets/click.mp3';
+import withBeats from '@metronome/components/src/Controls/with-beats';
 
 type Props = {
+  running: boolean,
   beat: number,
   beats: number,
 };
@@ -38,4 +40,4 @@ class Tick extends React.Component {
   }
 }
 
-export default Tick;
+export default withBeats(Tick);

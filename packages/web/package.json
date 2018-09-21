@@ -10,8 +10,8 @@
     "prettier": "prettier --write '{src,ssr,docs}/**/*.{md,js,jsx,json}'"
   },
   "dependencies": {
-    "@metronome/components": "^0.0.1",
     "@metronome/assets": "^0.0.1",
+    "@metronome/components": "^0.0.1",
     "core-js": "^2.5.7",
     "normalize.css": "^8.0.0",
     "react": "^16.4.1",
@@ -19,12 +19,12 @@
     "smalldash": "^1.1.9"
   },
   "devDependencies": {
-    "react-scripts": "next",
     "husky": "^0.14.3",
     "lint-staged": "^7.2.0",
     "node-sass-chokidar": "0.0.3",
     "npm-run-all": "^4.1.1",
-    "prettier": "^1.13.5"
+    "prettier": "^1.13.5",
+    "react-scripts": "next"
   },
   "lint-staged": {
     "{src,ssr,docs}/**/*.{md,js,jsx,json}": [

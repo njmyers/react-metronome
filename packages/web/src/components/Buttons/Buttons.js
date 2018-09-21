@@ -10,10 +10,10 @@ class Buttons extends React.Component {
   render() {
     return (
       <section className="buttons_container">
-        <Tap cb={this.props.onTap}>
+        <Tap>
           <TapButton />
         </Tap>
-        <Switch {...this.props} />
+        <Switch />
       </section>
     );
   }

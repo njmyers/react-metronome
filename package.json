@@ -13,6 +13,12 @@
       "packages/*"
     ],
     "nohoist": [
+      "**/redux-thunk",
+      "**/redux-thunk/**",
+      "**/react-redux",
+      "**/react-redux/**",
+      "**/redux",
+      "**/redux/**",
       "**/react",
       "**/react/**",
       "**/react-dom",

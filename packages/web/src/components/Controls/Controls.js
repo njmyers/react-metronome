@@ -1,51 +1,57 @@
 // @flow
 import * as React from 'react';
+import withControls from '@metronome/components/src/Controls/with-controls';
 import './controls.sass';
 import './range.sass';
 
 type Props = {
+  ms: number,
   bpm: number,
   beat: number,
-  tolerance: number,
-  onChange: Function,
+  setBPM: Function,
+  setBeat: Function,
 };
 
-const Controls = ({ bpm, beat, tolerance, onChange }: Props) => (
-  <section className="controls">
-    <div>
-      <label className="controls_label">BPM: {bpm}</label>
-      <input
-        type="range"
-        min="30"
-        max="400"
-        name="bpm"
-        value={bpm}
-        onChange={onChange}
-      />
-    </div>
-    <div>
-      <label className="controls_label">Beat: {beat}</label>
-      <input
-        type="range"
-        min="0"
-        max="7"
-        name="beat"
-        value={beat}
-        onChange={onChange}
-      />
-    </div>
-    <div>
-      <label className="controls_label">Tolerance: {tolerance}</label>
-      <input
-        type="range"
-        min="0"
-        max="10"
-        name="tolerance"
-        value={tolerance}
-        onChange={onChange}
-      />
-    </div>
-  </section>
-);
+class Controls extends React.Component<Props> {
+  onChange = ({ currentTarget: { name, value } }) => {
+    switch (name) {
+      case 'beat':
+        return this.props.setBeat(value);
+      case 'bpm':
+        return this.props.setBPM(value);
+      default:
+        return;
+    }
+  };
 
-export default Controls;
+  render() {
+    return (
+      <section className="controls">
+        <div>
+          <label className="controls_label">BPM: {this.props.bpm}</label>
+          <input
+            type="range"
+            min="30"
+            max="400"
+            name="bpm"
+            value={this.props.bpm}
+            onChange={this.onChange}
+          />
+        </div>
+        <div>
+          <label className="controls_label">Beat: {this.props.beat}</label>
+          <input
+            type="range"
+            min="0"
+            max="7"
+            name="beat"
+            value={this.props.beat}
+            onChange={this.onChange}
+          />
+        </div>
+      </section>
+    );
+  }
+}
+
+export default withControls(Controls);

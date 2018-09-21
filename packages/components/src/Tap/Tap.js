@@ -1,8 +1,9 @@
 // @flow
 import * as React from 'react';
+import withControls from '../Controls/with-controls';
 
 type Props = {
-  cb: Function,
+  setMS: Function,
   children: React.Node,
 };
 
@@ -13,11 +14,9 @@ type State = {
   timeout: null | TimeoutID,
 };
 
-const msToBpm = (ms) => 60 / (ms / 1000);
-
 class Tap extends React.Component<Props, State> {
   state = {
-    tempo: 60,
+    tempo: 1000,
     intervals: [],
     last: 0,
     timeout: null,
@@ -25,10 +24,8 @@ class Tap extends React.Component<Props, State> {
 
   reduceTempo = () =>
     Math.round(
-      msToBpm(
-        this.state.intervals.slice(-3).reduce((a, b) => a + b, 0) /
-          Math.min(this.state.intervals.length, 3)
-      )
+      this.state.intervals.slice(-3).reduce((a, b) => a + b, 0) /
+        Math.min(this.state.intervals.length, 3)
     );
 
   reset = () => this.setState({ intervals: [], last: 0 });
@@ -53,21 +50,16 @@ class Tap extends React.Component<Props, State> {
   };
 
   componentDidUpdate(prevProps: Props, prevState: State) {
-    if (
-      this.state.tempo !== prevState.tempo &&
-      this.props.cb &&
-      typeof this.props.cb === 'function'
-    ) {
-      this.props.cb(this.state.tempo);
+    if (this.state.tempo !== prevState.tempo) {
+      this.props.setMS(this.state.tempo);
     }
   }
 
   render() {
     return React.cloneElement(React.Children.only(this.props.children), {
       tap: this.tap,
-      tempo: this.state.tempo,
     });
   }
 }
 
-export default Tap;
+export default withControls(Tap);
