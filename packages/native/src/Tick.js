@@ -1,9 +1,11 @@
 // @flow
 import * as React from 'react';
 import Expo from 'expo';
+import withBeats from '@metronome/components/src/Controls/with-beats';
 
 type Props = {
   beats: number,
+  running: boolean,
 };
 
 type State = {
@@ -16,8 +18,6 @@ class Tick extends React.Component<Props, State> {
   state = {
     loaded: false,
   };
-
-  // play = this.sound.replayAsync.bind(this);
 
   loadAudio = () => {
     this.sound
@@ -33,13 +33,9 @@ class Tick extends React.Component<Props, State> {
 
   play = () => {
     if (this.state.loaded) {
-      // this.sound
-      // .stopAsync()
-      // .then(() => {
       this.sound
         .replayAsync()
         .then(() => setTimeout(this.sound.stopAsync, 100))
-        // })
         .catch((error) => {
           console.log(error);
         });
@@ -64,4 +60,4 @@ class Tick extends React.Component<Props, State> {
   }
 }
 
-export default Tick;
+export default withBeats(Tick);

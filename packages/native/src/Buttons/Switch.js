@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Button from 'apsl-react-native-button';
+import withSwitches from '@metronome/components/src/Controls/with-switches';
 import Lato from '../Lato';
 import styles from './styles';
 
@@ -16,4 +17,4 @@ class Switch extends React.Component {
   }
 }
 
-export default Switch;
+export default withSwitches(Switch);

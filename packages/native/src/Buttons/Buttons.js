@@ -9,8 +9,8 @@ class Buttons extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Switch {...this.props} />
-        <Tap cb={this.props.onTap}>
+        <Switch />
+        <Tap>
           <TapButton />
         </Tap>
       </View>

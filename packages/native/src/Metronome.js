@@ -2,49 +2,31 @@ import React from 'react';
 import Expo from 'expo';
 import { StyleSheet, Text, View } from 'react-native';
 
+import Provider from '@metronome/components/src/Provider';
 import Controls from './Controls';
 import Tick from './Tick';
 import Buttons from './Buttons';
 import Animator from './Animator';
 import Clock from '@metronome/components/src/Clock';
 import Rotator from '@metronome/components/src/Rotator';
-// assets
+// // assets
 import Base from './Base';
 import { blue, white } from '@metronome/assets/colors';
 
-let time;
-
-export default class App extends React.Component {
-  state = {
-    bpm: 120,
-    beat: 1,
-  };
-
-  onBPM = (value) => {
-    this.setState((state) => ({ bpm: value }));
-  };
-
-  onBeat = (value) => {
-    this.setState((state) => ({ beat: value }));
-  };
-
-  onTap = (value) => {
-    this.setState((state) => ({ bpm: value }));
-  };
-
+class Metronome extends React.Component {
   render() {
     return (
-      <View style={styles.appView}>
-        <Controls {...this.state} onBPM={this.onBPM} onBeat={this.onBeat} />
-        <Base />
-        <Clock bpm={this.state.bpm}>
-          <Buttons onTap={this.onTap} />
-          <Tick />
+      <Provider>
+        <View style={styles.appView}>
+          <Controls />
+          <Base />
           <Rotator>
             <Animator />
           </Rotator>
-        </Clock>
-      </View>
+          <Tick />
+          <Buttons />
+        </View>
+      </Provider>
     );
   }
 }
@@ -57,3 +39,5 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
   },
 });
+
+export default Metronome;

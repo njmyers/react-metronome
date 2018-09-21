@@ -3,6 +3,7 @@ import * as React from 'react';
 import Slider from 'react-native-slider';
 import { StyleSheet, View } from 'react-native';
 // components
+import withControls from '@metronome/components/src/Controls/with-controls';
 import Lato from './Lato';
 // styles
 import { white, lightBlue } from '@metronome/assets/colors';
@@ -10,8 +11,8 @@ import { white, lightBlue } from '@metronome/assets/colors';
 type Props = {
   bpm: number,
   beat: number,
-  onBPM: Function,
-  onBeat: Function,
+  setBPM: Function,
+  setBeat: Function,
 };
 
 class Controls extends React.Component<Props> {
@@ -27,7 +28,7 @@ class Controls extends React.Component<Props> {
           maximumTrackTintColor={white}
           thumbTintColor={lightBlue}
           value={this.props.bpm}
-          onValueChange={this.props.onBPM}
+          onValueChange={this.props.setBPM}
           minimumValue={20}
           maximumValue={400}
           step={1}
@@ -41,7 +42,7 @@ class Controls extends React.Component<Props> {
           maximumTrackTintColor={white}
           thumbTintColor={lightBlue}
           value={this.props.beat}
-          onValueChange={this.props.onBeat}
+          onValueChange={this.props.setBeat}
           minimumValue={0}
           maximumValue={11}
           step={1}
@@ -78,4 +79,4 @@ const style = StyleSheet.create({
   },
 });
 
-export default Controls;
+export default withControls(Controls);

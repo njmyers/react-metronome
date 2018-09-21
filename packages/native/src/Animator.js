@@ -13,7 +13,6 @@ class Animator extends React.Component {
   getRotation = () => `${this.props.rotation}deg`;
 
   render() {
-    console.log(this.getRotation());
     return (
       <View
         style={[

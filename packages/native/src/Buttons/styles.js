@@ -3,7 +3,6 @@ import { white, black } from '@metronome/assets/colors';
 
 const styles = StyleSheet.create({
   button: {
-    color: white,
     height: 44,
     width: 104,
     backgroundColor: white,
