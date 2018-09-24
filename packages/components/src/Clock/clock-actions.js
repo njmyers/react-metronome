@@ -31,7 +31,7 @@ const stopTimer = (value) => ({
 
 const resetState = () => ({
   type: '@TIMER/RESET',
-  date: Date.now(),
+  date: window.performance.now(),
   counter: 0,
   beats: 0,
 });

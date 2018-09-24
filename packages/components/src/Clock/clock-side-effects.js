@@ -37,9 +37,14 @@ const frame = () => (dispatch, getState) => {
       console.log('beat: ', prevState.counter);
     }
     // now do time sensitive stuff
-    const counter = 0;
+    // get the next performance stamp
+    const date = window.performance.now();
+    // calculate difference...
+    const difference = date - prevState.date;
+    // ... and carry over remainder to next state
+    const counter = prevState.counter + difference - prevState.ms;
+    // log the passing of a beat
     const beats = prevState.beats + 1;
-    const date = Date.now();
 
     dispatch(
       updateTimer({
@@ -51,30 +56,31 @@ const frame = () => (dispatch, getState) => {
   }
   // this sets accuracy so that the metronome does not 'drag'
   // metronome will click up to tolerance level milliseconds before
-  else if (withinTolerance(prevState)) {
-    // do other stuff first
-    scheduleNext = () =>
-      dispatch(
-        saveImmediateID(setImmediate(() => dispatch(frame()), frameRate))
-      );
-
-    // log
-    if (process.env.NODE_ENV !== 'production') {
-      console.log('immediates: ', prevState.counter);
-    }
-    // now do time sensitive stuff
-    const date = Date.now();
-    const difference = date - prevState.date;
-    const counter = prevState.counter + difference;
-
-    dispatch(
-      updateTimer({
-        beats: prevState.beats,
-        date,
-        counter,
-      })
-    );
-  } else {
+  // else if (withinTolerance(prevState)) {
+  //   // do other stuff first
+  //   scheduleNext = () =>
+  //     dispatch(
+  //       saveImmediateID(setImmediate(() => dispatch(frame()), frameRate))
+  //     );
+  //
+  //   // log
+  //   if (process.env.NODE_ENV !== 'production') {
+  //     console.log('immediates: ', prevState.counter);
+  //   }
+  //   // now do time sensitive stuff
+  //   const date = window.performance.now();
+  //   const difference = date - prevState.date;
+  //   const counter = prevState.counter + difference;
+  //
+  //   dispatch(
+  //     updateTimer({
+  //       beats: prevState.beats,
+  //       date,
+  //       counter,
+  //     })
+  //   );
+  // }
+  else {
     // do other stuff first
     scheduleNext = () =>
       dispatch(saveTimeoutID(setTimeout(() => dispatch(frame()), frameRate)));
@@ -84,7 +90,7 @@ const frame = () => (dispatch, getState) => {
     // }
 
     // now do time sensitive stuff
-    const date = Date.now();
+    const date = window.performance.now();
     const difference = date - prevState.date;
     const counter = prevState.counter + difference;
 
