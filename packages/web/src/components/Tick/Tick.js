@@ -58,7 +58,6 @@ class Tick extends React.Component<Props, State> {
   play = (buffer: AudioBuffer) => {
     if (this.state.AudioContext) {
       const currentTime = this.state.AudioContext.currentTime;
-      console.log(currentTime, currentTime + this.getLookahead());
       const source = this.state.AudioContext.createBufferSource();
 
       source.buffer = buffer;
@@ -120,7 +119,7 @@ class Tick extends React.Component<Props, State> {
 
   componentDidUpdate(prevProps: Props, prevState: State) {
     if (this.shouldSchedule()) {
-      if (this.props.beat % this.props.beats !== 0) {
+      if (this.props.beats % this.props.beat !== 0) {
         this.log('tick');
         this.play(this.state.tick);
       } else {

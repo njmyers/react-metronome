@@ -9,7 +9,7 @@ function createWindow() {
 
   win.loadURL(
     url.format({
-      pathname: path.resolve(__dirname, 'build/index.html'),
+      pathname: path.resolve(__dirname, '../build/index.html'),
       protocol: 'file:',
       slashes: true,
     })
@@ -17,3 +17,15 @@ function createWindow() {
 }
 
 electron.app.on('ready', createWindow);
+
+electron.on('window-all-closed', () => {
+  if (process.platform !== 'darwin') {
+    electron.quit();
+  }
+});
+
+electron.on('activate', () => {
+  if (mainWindow === null) {
+    createWindow();
+  }
+});

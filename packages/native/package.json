@@ -2,7 +2,7 @@
   "name": "@metronome/native",
   "author": "Nicholas Myers <nickmyers111@gmail.com>",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
@@ -11,8 +11,8 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "@metronome/assets": "^0.0.1",
-    "@metronome/components": "^0.0.1",
+    "@metronome/assets": "^0.1.0",
+    "@metronome/components": "^0.1.0",
     "apsl-react-native-button": "^3.1.1",
     "bezier-easing": "^2.1.0",
     "expo": "^30.0.1",

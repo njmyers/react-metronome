@@ -30,7 +30,8 @@
       "**/expo",
       "**/expo/**",
       "**/electron",
-      "**/bezier-easing",
+      "**/concurrently",
+      "**/bezier",
       "**/fast-memoize"
     ]
   },
