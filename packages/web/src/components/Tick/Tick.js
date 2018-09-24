@@ -101,7 +101,7 @@ class Tick extends React.Component<Props, State> {
     request.send();
   };
 
-  shouldSchedule = (lookAhead = 50) => {
+  shouldSchedule = (lookAhead = 100) => {
     return (
       this.props.ms - this.props.counter < lookAhead && !this.state.scheduled
     );
