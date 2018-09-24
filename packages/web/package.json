@@ -12,6 +12,7 @@
   "dependencies": {
     "@metronome/assets": "^0.0.1",
     "@metronome/components": "^0.0.1",
+    "bezier": "^0.1.0",
     "core-js": "^2.5.7",
     "normalize.css": "^8.0.0",
     "react": "^16.4.1",
