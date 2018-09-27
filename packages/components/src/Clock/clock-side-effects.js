@@ -53,34 +53,7 @@ const frame = () => (dispatch, getState) => {
         beats,
       })
     );
-  }
-  // this sets accuracy so that the metronome does not 'drag'
-  // metronome will click up to tolerance level milliseconds before
-  // else if (withinTolerance(prevState)) {
-  //   // do other stuff first
-  //   scheduleNext = () =>
-  //     dispatch(
-  //       saveImmediateID(setImmediate(() => dispatch(frame()), frameRate))
-  //     );
-  //
-  //   // log
-  //   if (process.env.NODE_ENV !== 'production') {
-  //     console.log('immediates: ', prevState.counter);
-  //   }
-  //   // now do time sensitive stuff
-  //   const date = window.performance.now();
-  //   const difference = date - prevState.date;
-  //   const counter = prevState.counter + difference;
-  //
-  //   dispatch(
-  //     updateTimer({
-  //       beats: prevState.beats,
-  //       date,
-  //       counter,
-  //     })
-  //   );
-  // }
-  else {
+  } else {
     // do other stuff first
     scheduleNext = () =>
       dispatch(saveTimeoutID(setTimeout(() => dispatch(frame()), frameRate)));
