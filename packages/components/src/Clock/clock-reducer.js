@@ -7,7 +7,6 @@ type State = {
   beat: number,
   running: boolean,
   timeoutID: null | TimeoutID,
-  immediateID: null | ImmediateID,
 };
 
 const initialState: State = {
@@ -20,7 +19,6 @@ const initialState: State = {
   beat: 4,
   running: false,
   timeoutID: null,
-  immediateID: null,
 };
 
 const clockReducer = (state: State = initialState, action) => {

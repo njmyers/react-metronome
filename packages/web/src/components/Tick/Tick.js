@@ -1,6 +1,7 @@
 // @flow
 import * as React from 'react';
-import tick from '@metronome/assets/click.mp3';
+import tick from '@metronome/assets/rimshot.mp3';
+import tock from '@metronome/assets/cow-bell.mp3';
 import withClock from '@metronome/components/src/Controls/with-clock';
 
 type Props = {
@@ -79,6 +80,7 @@ class Tick extends React.Component<Props, State> {
   };
 
   loadAudioAsync = (url: string, name: string) => {
+    console.log(url);
     const request = new XMLHttpRequest();
     request.open('GET', url, true);
     request.responseType = 'arraybuffer';
@@ -138,7 +140,7 @@ class Tick extends React.Component<Props, State> {
     if (this.state.AudioContext && !prevState.AudioContext) {
       webAudioTouchUnlock(this.state.AudioContext);
       this.loadAudioAsync(tick, 'tick');
-      this.loadAudioAsync(tick, 'tock');
+      this.loadAudioAsync(tock, 'tock');
     }
   }
 

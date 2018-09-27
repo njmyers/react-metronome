@@ -1,7 +1,6 @@
 import {
   updateTimer,
   saveTimeoutID,
-  saveImmediateID,
   resetState,
   startTimer,
   stopTimer,
@@ -13,10 +12,6 @@ const frameRate = 1;
 
 const shouldBeat = (state: State) => {
   return state.counter >= state.ms || Math.abs(state.ms - state.counter) <= 0;
-};
-
-const withinTolerance = (state: State) => {
-  return Math.abs(state.counter - state.ms) <= tolerance;
 };
 
 const frame = () => (dispatch, getState) => {
