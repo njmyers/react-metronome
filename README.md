@@ -4,7 +4,7 @@
 
 For a long time I've been frustrated by digital metronomes. They are usually quite imprecise timekeepers when compared with the regularity of a nice [quartz crystal](https://www.samash.com/matrix-mr500-compact-quartz-metronome-mmr500). They also lack the charm associated with an old school [wind-up version](https://en.wikipedia.org/wiki/Metronome). This project is an attempt to bridge the gap and give the digital metronome some of the qualities of their real-world equivalents.
 
-## Technical Explanantion
+## Technical Explanation
 
 ### Loops
 
@@ -23,4 +23,4 @@ Anyone who is familiar with digital audio will know how the word 'latency' can s
 
 ## Conclusion
 
-[Try the metronome here](https://react-metronome.netlify.com/) and let me know what you think. I will be adding new features soon including more sounds (from real instruments!) as well as subdivisions for quarter notes. That is for all of the drummers out there :)
+[Try the metronome here](https://react-metronome.netlify.app/) and let me know what you think. I will be adding new features soon including more sounds (from real instruments!) as well as subdivisions for quarter notes. That is for all of the drummers out there :)
